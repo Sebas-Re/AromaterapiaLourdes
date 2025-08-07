@@ -40,14 +40,14 @@ html {
     padding-top: 12vh;
 }
 
-.coffeeModal:hover {
-    -webkit-animation: coffeeModal 0.5s ease-in-out both;
-    animation: coffeeModal 0.5s ease-in-out both;
+.modalBase:hover {
+    -webkit-animation: modalBase 0.5s ease-in-out both;
+    animation: modalBase 0.5s ease-in-out both;
 }
 
 
 
-@-webkit-keyframes coffeeModal {
+@-webkit-keyframes modalBase {
     0% {
         -webkit-transform: scale(1);
         transform: scale(1);
@@ -61,7 +61,7 @@ html {
         transform: scale(1);
     }
 }
-@keyframes coffeeModal {
+@keyframes modalBase {
     0% {
         -webkit-transform: scale(1);
         transform: scale(1);
