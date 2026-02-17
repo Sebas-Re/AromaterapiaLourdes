@@ -1,6 +1,6 @@
-﻿################################################################################
-# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
-################################################################################
-
+﻿# User configuration files
 /.vs
+/.idea
+
+# Workspace specific files
 /media/image/Aceites/old.7z
