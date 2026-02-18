@@ -1,24 +1,25 @@
 <!doctype html>
-<!--suppress CheckImageSize -->
-<html lang="en">
+<html lang="en" data-bs-theme="light">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Aromaterapia Lourdes</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link href="css/styles.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="media/css/styles.css" rel="stylesheet">
+    <script src="media/js/theme.js"></script>
 </head>
 
 <body>
-<header class="sticky-top bg-light flex-md-nowrap p-0 shadow">
+<header class="sticky-top bg-body-tertiary p-0 shadow">
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
                 <img src="media/image/LOGO%20BN%20transparente.jpg" alt="Aromaterapia Lourdes Icon" width="40" height="40" class="d-inline-block align-text-top">
-                <span style="font-size: 15px">Aromaterapia Lourdes</span>
+                <span class="navbar-brand-text">Aromaterapia Lourdes</span>
             </a>
+            <button class="btn btn-link theme-toggle" id="theme-toggle" aria-label="Toggle theme" type="button"><i class="bi bi-sun-fill" id="theme-icon"></i></button>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -46,8 +47,6 @@
                         </li>
                     </ul>
                 </div>
-
-
             </div>
         </div>
     </nav>
@@ -57,7 +56,7 @@
     <div class="container text-center">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
             <div class="col">
-                <a data-bs-toggle="modal" data-bs-target="#Blend1Modal" type="button" class="modalBase" style="text-decoration: none">
+                <a data-bs-toggle="modal" data-bs-target="#Blend1Modal" type="button" class="modalBase">
                     <div class="card h-100">
                         <img src="media/image/Blends/Blend_armonia_estres_emocional.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -70,7 +69,7 @@
                 </a>
             </div>
             <div class="col">
-                <a data-bs-toggle="modal" data-bs-target="#Blend2Modal" type="button" class="modalBase" style="text-decoration: none">
+                <a data-bs-toggle="modal" data-bs-target="#Blend2Modal" type="button" class="modalBase">
                     <div class="card h-100">
                         <img src="media/image/Blends/Blend_Dulces_Sueños.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -83,7 +82,7 @@
                 </a>
             </div>
             <div class="col">
-                <a data-bs-toggle="modal" data-bs-target="#Blend3Modal" type="button" class="modalBase" style="text-decoration: none">
+                <a data-bs-toggle="modal" data-bs-target="#Blend3Modal" type="button" class="modalBase">
                     <div class="card h-100">
                         <img src="media/image/Blends/Blend_Equilibrio_Emocional.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -96,7 +95,7 @@
                 </a>
             </div>
             <div class="col">
-                <a data-bs-toggle="modal" data-bs-target="#Blend4Modal" type="button" class="modalBase" style="text-decoration: none">
+                <a data-bs-toggle="modal" data-bs-target="#Blend4Modal" type="button" class="modalBase">
                     <div class="card h-100">
                         <img src="media/image/Blends/Blend_Estres_Mental.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -109,7 +108,7 @@
                 </a>
             </div>
             <div class="col">
-                <a data-bs-toggle="modal" data-bs-target="#Blend5Modal" type="button" class="modalBase" style="text-decoration: none">
+                <a data-bs-toggle="modal" data-bs-target="#Blend5Modal" type="button" class="modalBase">
                     <div class="card h-100">
                         <img src="media/image/Blends/Blend_Fortaleza.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -122,7 +121,7 @@
                 </a>
             </div>
             <div class="col">
-                <a data-bs-toggle="modal" data-bs-target="#Blend6Modal" type="button" class="modalBase" style="text-decoration: none">
+                <a data-bs-toggle="modal" data-bs-target="#Blend6Modal" type="button" class="modalBase">
                     <div class="card h-100">
                         <img src="media/image/Blends/Blend_Metcanfor.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -134,22 +133,17 @@
                     </div>
                 </a>
             </div>
-            <!--
-            <div class="col">
-                <a data-bs-toggle="modal" data-bs-target="#Blend7Modal" type="button" class="modalBase" style="text-decoration: none">
+            <!-- <div class="col">
+                <a data-bs-toggle="modal" data-bs-target="#Blend7Modal" type="button" class="modalBase">
                     <div class="card h-100">
                         <img src="media/image/Blends/cedro-benjui.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Cedro - Benjui</h5>
-                            <p class="card-text">
-
-                            </p>
+                            <p class="card-text"></p>
                         </div>
                     </div>
                 </a>
-            </div>
-            -->
-
+            </div> -->
         </div>
     </div>
 </div>
@@ -171,10 +165,10 @@
                         Para utilizar en casos frecuentes de ansiedad y estrés emocional.
                         Con base de neroli y sándalo que actúan en el sistema nervioso relajando para recuperar el equilibrio y armonía.
                     </div>
-                    <div class="col-4" style="padding-top: 0.5vh">
+                    <div class="col-4 modal-img-section">
                         <img src="media/image/Blends/Blend_armonia_estres_emocional.jpg" class="img-fluid" alt="...">
-                        <div style="padding-top: 0.5vh">
-                            <text style="color: darkslategrey">Cantidad: 60ml</text>
+                        <div class="modal-img-section">
+                            <span class="product-qty">Cantidad: 60ml</span>
                         </div>
                     </div>
                 </div>
@@ -203,10 +197,10 @@
                         Melissa Y lavanda que ayuda y alivia el sistema nervioso. Con gardenia y magnolia, aceites que
                         relajan el sistema parasimpático.
                     </div>
-                    <div class="col-4" style="padding-top: 0.5vh">
+                    <div class="col-4 modal-img-section">
                         <img src="media/image/Blends/Blend_Dulces_Sueños.jpg" class="img-fluid" alt="...">
-                        <div style="padding-top: 0.5vh">
-                            <text style="color: darkslategrey">Cantidad: 60ml</text>
+                        <div class="modal-img-section">
+                            <span class="product-qty">Cantidad: 60ml</span>
                         </div>
                     </div>
                 </div>
@@ -233,10 +227,10 @@
                         emocional. Activa la producción de endorfina y serotonina promoviendo así el bienestar,
                         impulsando el optimismo y fortaleciendo una actitud positiva. Revitaliza
                     </div>
-                    <div class="col-4" style="padding-top: 0.5vh">
+                    <div class="col-4 modal-img-section">
                         <img src="media/image/Blends/Blend_Equilibrio_Emocional.jpg" class="img-fluid" alt="...">
-                        <div style="padding-top: 0.5vh">
-                            <text style="color: darkslategrey">Cantidad: 60ml</text>
+                        <div class="modal-img-section">
+                            <span class="product-qty">Cantidad: 60ml</span>
                         </div>
                     </div>
                 </div>
@@ -262,10 +256,10 @@
                         Este producto acompaña  momentos de agotamiento mental . Despeja y estimula la mente  frente 
                         a estados de agobio y cansancio mental . ideal  en época de exámenes, exigencia laboral, etc.
                     </div>
-                    <div class="col-4" style="padding-top: 0.5vh">
+                    <div class="col-4 modal-img-section">
                         <img src="media/image/Blends/Blend_Estres_Mental.jpg" class="img-fluid" alt="...">
-                        <div style="padding-top: 0.5vh">
-                            <text style="color: darkslategrey">Cantidad: 60ml</text>
+                        <div class="modal-img-section">
+                            <span class="product-qty">Cantidad: 60ml</span>
                         </div>
                     </div>
                 </div>
@@ -293,10 +287,10 @@
                         Activa el sistema endocrino. Aconsejado para bloqueos, gracias al benjuí y enebro;
                         con acción energética a largo plazo sostenida por el cedro.
                     </div>
-                    <div class="col-4" style="padding-top: 0.5vh">
+                    <div class="col-4 modal-img-section">
                         <img src="media/image/Blends/Blend_Fortaleza.jpg" class="img-fluid" alt="...">
-                        <div style="padding-top: 0.5vh">
-                            <text style="color: darkslategrey">Cantidad: 60ml</text>
+                        <div class="modal-img-section">
+                            <span class="product-qty">Cantidad: 60ml</span>
                         </div>
                     </div>
                 </div>
@@ -324,10 +318,10 @@
                         bronquitis. Purifica el ambiente. Con eucalipto y alcanfor, excelentes repelentes d bacterias;
                         menta para liberar congestión; y tomillo para despegar flema.
                     </div>
-                    <div class="col-4" style="padding-top: 0.5vh">
+                    <div class="col-4 modal-img-section">
                         <img src="media/image/Blends/Blend_Metcanfor.jpg" class="img-fluid" alt="...">
-                        <div style="padding-top: 0.5vh">
-                            <text style="color: darkslategrey">Cantidad: 60ml</text>
+                        <div class="modal-img-section">
+                            <span class="product-qty">Cantidad: 60ml</span>
                         </div>
                     </div>
                 </div>
@@ -339,8 +333,7 @@
     </div>
 </div>
 
-<!-- Modal 7 -->
-<div class="modal fade" id="Blend7Modal" tabindex="-1" aria-labelledby="Blend7ModalLabel" aria-hidden="true">
+<!-- <div class="modal fade" id="Blend7Modal" tabindex="-1" aria-labelledby="Blend7ModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg">
         <div class="modal-content">
             <div class="modal-header">
@@ -352,10 +345,10 @@
                     <div class="col-8">
                         DESCRIPCION NO ENCONTRADA PARA CEDRO - BENJUI
                     </div>
-                    <div class="col-4" style="padding-top: 0.5vh">
+                    <div class="col-4 modal-img-section">
                         <img src="media/image/Blends/cedro-benjui.png" class="img-fluid" alt="...">
-                        <div style="padding-top: 0.5vh">
-                            <text style="color: darkslategrey">Cantidad: 60ml</text>
+                        <div class="modal-img-section">
+                            <span class="product-qty">Cantidad: 60ml</span>
                         </div>
                     </div>
                 </div>
@@ -365,14 +358,10 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous">
-</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 </html>
