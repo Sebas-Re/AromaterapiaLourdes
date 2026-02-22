@@ -1,424 +1,407 @@
 <!doctype html>
-<!--suppress CheckImageSize -->
-<html lang="en">
+<html lang="es" data-bs-theme="light">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Aromaterapia Lourdes</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <title>Extras — Aromaterapia Lourdes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link href="css/styles.css" rel="stylesheet">
+    <script src="js/theme.js"></script>
 </head>
-
 <body>
-<header class="sticky-top bg-light flex-md-nowrap p-0 shadow">
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-                <img src="media/image/LOGO%20BN%20transparente.jpg" alt="Aromaterapia Lourdes Icon" width="40" height="40" class="d-inline-block align-text-top">
-                <span style="font-size: 15px">Aromaterapia Lourdes</span>
+
+    <!-- NAVBAR -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-glass shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <img src="image/LOGO%20BN%20transparente.jpg" alt="Aromaterapia Lourdes" width="36" height="36" class="rounded-circle">
+                <span class="fw-semibold">Aromaterapia Lourdes</span>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Menu">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <div class="col">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-underline justify-content-center">
-                        <li class="nav-item">
-                            <a class="nav-link" href="SobreNosotros.html">Sobre Nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="index.html">Aceites</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="Blends.html">Blends</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="Cremas.html">Cremas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="Extras.html">Extras</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="Contacto.html">Contacto</a>
-                        </li>
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav ms-auto me-3">
+                    <li class="nav-item"><a class="nav-link" href="SobreNosotros.html">Sobre Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Aceites</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Blends.html">Blends</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Cremas.html">Cremas</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="Extras.html">Extras</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Contacto.html">Contacto</a></li>
+                </ul>
+                <div class="dropdown">
+                    <button class="theme-toggle-btn dropdown-toggle" type="button" id="theme-toggle-btn" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-circle-half" id="theme-toggle-icon"></i>
+                        <span id="theme-toggle-label">Auto</span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><button class="dropdown-item d-flex align-items-center gap-2" data-theme-value="light"><i class="bi bi-sun-fill"></i> Claro</button></li>
+                        <li><button class="dropdown-item d-flex align-items-center gap-2" data-theme-value="dark"><i class="bi bi-moon-stars-fill"></i> Oscuro</button></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><button class="dropdown-item d-flex align-items-center gap-2" data-theme-value="auto"><i class="bi bi-circle-half"></i> Automatico</button></li>
                     </ul>
                 </div>
-
-
             </div>
         </div>
     </nav>
-</header>
 
-<div class="main container-fluid">
-    <div class="container text-center">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+    <main class="container py-4">
+        <h1 class="page-title">Extras</h1>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+
+            <!-- Vias Respiratorias -->
             <div class="col">
-                <a data-bs-toggle="modal" data-bs-target="#Extras1Modal" type="button" class="modalBase" style="text-decoration: none">
-                    <div class="card h-100">
-                        <img src="media/image/Extras/Extras_Vías_Respiratorias.jpeg" class="card-img-top" alt="...">
+                <a class="product-card" data-bs-toggle="modal" data-bs-target="#modalViasResp" role="button" tabindex="0">
+                    <div class="card shadow-sm">
+                        <img src="image/Extras/Extras_Vias_Respiratorias.jpeg" class="card-img-top" alt="Vias Respiratorias">
                         <div class="card-body">
-                            <h5 class="card-title">Vías Respiratorias</h5>
-                            <p class="card-text">
-                                <!-- texto -->
-                            </p>
+                            <p class="card-title">Vias Respiratorias</p>
+                            <p class="card-text">Combinacion de 6 aceites esenciales para facilitar la descongestion.</p>
                         </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col">
-                <a data-bs-toggle="modal" data-bs-target="#Extras2Modal" type="button" class="modalBase" style="text-decoration: none">
-                    <div class="card h-100">
-                        <img src="media/image/Extras/Extras_Antiestrés.jpeg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Anti Estrés</h5>
-                            <p class="card-text">
-                                <!-- texto -->
-                            </p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col">
-                <a data-bs-toggle="modal" data-bs-target="#Extras3Modal" type="button" class="modalBase" style="text-decoration: none">
-                    <div class="card h-100">
-                        <img src="media/image/Extras/Extras_Óleo_21.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Óleo 21</h5>
-                            <p class="card-text">
-                                <!-- texto -->
-                            </p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col">
-                <a data-bs-toggle="modal" data-bs-target="#Extras4Modal" type="button" class="modalBase" style="text-decoration: none">
-                    <div class="card h-100">
-                        <img src="media/image/Extras/Extras_Bálsamo_Labial.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Bálsamo Labial</h5>
-                            <p class="card-text">
-                                <!-- texto -->
-                            </p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col">
-                <a data-bs-toggle="modal" data-bs-target="#Extras5Modal" type="button" class="modalBase" style="text-decoration: none">
-                    <div class="card h-100">
-                        <img src="media/image/Extras/Extras_Bálsamo_Labial_Mentolado.jpeg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Bálsamo Labial mentolado</h5>
-                            <p class="card-text">
-                                <!-- texto -->
-                            </p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col">
-                <a data-bs-toggle="modal" data-bs-target="#Extras6Modal" type="button" class="modalBase" style="text-decoration: none">
-                    <div class="card h-100">
-                        <img src="media/image/Extras/Extras_Micelar_Lavanda.jpeg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Agua Micelar de Lavanda</h5>
-                            <p class="card-text">
-                                <!-- texto -->
-                            </p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col">
-                <a data-bs-toggle="modal" data-bs-target="#Extras7Modal" type="button" class="modalBase" style="text-decoration: none">
-                    <div class="card h-100">
-                        <img src="media/image/Extras/Extras_Tónico_Romero.jpeg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Tónico de Romero</h5>
-                            <p class="card-text">
-                                <!-- texto -->
-                            </p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col">
-                <a data-bs-toggle="modal" data-bs-target="#Extras8Modal" type="button" class="modalBase" style="text-decoration: none">
-                    <div class="card h-100">
-                        <img src="media/image/Extras/VETIVER.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Oleato de Vetiver</h5>
-                            <p class="card-text">
-                                <!-- texto -->
-                            </p>
+                        <div class="card-footer d-flex align-items-center justify-content-between">
+                            <span class="badge bg-primary">10ml</span>
+                            <small class="fw-semibold card-cta">Mas info <i class="bi bi-arrow-right"></i></small>
                         </div>
                     </div>
                 </a>
             </div>
 
+            <!-- Anti Estres -->
+            <div class="col">
+                <a class="product-card" data-bs-toggle="modal" data-bs-target="#modalAntiEstres" role="button" tabindex="0">
+                    <div class="card shadow-sm">
+                        <img src="image/Extras/Extras_Antiestres.jpeg" class="card-img-top" alt="Anti Estres">
+                        <div class="card-body">
+                            <p class="card-title">Anti Estres</p>
+                            <p class="card-text">13 aceites esenciales que brindan sensacion de bienestar.</p>
+                        </div>
+                        <div class="card-footer d-flex align-items-center justify-content-between">
+                            <span class="badge bg-primary">10ml</span>
+                            <small class="fw-semibold card-cta">Mas info <i class="bi bi-arrow-right"></i></small>
+                        </div>
+                    </div>
+                </a>
+            </div>
 
+            <!-- Oleo 21 -->
+            <div class="col">
+                <a class="product-card" data-bs-toggle="modal" data-bs-target="#modalOleo21" role="button" tabindex="0">
+                    <div class="card shadow-sm">
+                        <img src="image/Extras/Extras_Oleo_21.png" class="card-img-top" alt="Oleo 21">
+                        <div class="card-body">
+                            <p class="card-title">Oleo 21</p>
+                            <p class="card-text">Mix de aceites esenciales para armonizacion de emociones.</p>
+                        </div>
+                        <div class="card-footer d-flex align-items-center justify-content-between">
+                            <span class="badge bg-primary">10ml</span>
+                            <small class="fw-semibold card-cta">Mas info <i class="bi bi-arrow-right"></i></small>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Balsamo Labial -->
+            <div class="col">
+                <a class="product-card" data-bs-toggle="modal" data-bs-target="#modalBalsamoLabial" role="button" tabindex="0">
+                    <div class="card shadow-sm">
+                        <img src="image/Extras/Extras_Balsamo_Labial.png" class="card-img-top" alt="Balsamo Labial">
+                        <div class="card-body">
+                            <p class="card-title">Balsamo Labial</p>
+                            <p class="card-text">Balsamo a base de jojoba. Restaurador e hidratante.</p>
+                        </div>
+                        <div class="card-footer d-flex align-items-center justify-content-between">
+                            <span class="badge bg-primary">10ml</span>
+                            <small class="fw-semibold card-cta">Mas info <i class="bi bi-arrow-right"></i></small>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Balsamo Labial Mentolado -->
+            <div class="col">
+                <a class="product-card" data-bs-toggle="modal" data-bs-target="#modalBalsamoMentolado" role="button" tabindex="0">
+                    <div class="card shadow-sm">
+                        <img src="image/Extras/Extras_Balsamo_Labial_Mentolado.jpeg" class="card-img-top" alt="Balsamo Labial mentolado">
+                        <div class="card-body">
+                            <p class="card-title">Balsamo Labial mentolado</p>
+                            <p class="card-text">Descongestiona y alivia vias respiratorias.</p>
+                        </div>
+                        <div class="card-footer d-flex align-items-center justify-content-between">
+                            <span class="badge bg-primary">10ml</span>
+                            <small class="fw-semibold card-cta">Mas info <i class="bi bi-arrow-right"></i></small>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Agua Micelar de Lavanda -->
+            <div class="col">
+                <a class="product-card" data-bs-toggle="modal" data-bs-target="#modalMicelar" role="button" tabindex="0">
+                    <div class="card shadow-sm">
+                        <img src="image/Extras/Extras_Micelar_Lavanda.jpeg" class="card-img-top" alt="Agua Micelar de Lavanda">
+                        <div class="card-body">
+                            <p class="card-title">Agua Micelar de Lavanda</p>
+                            <p class="card-text">Tonico facial para pieles sensibles. Humecta y equilibra.</p>
+                        </div>
+                        <div class="card-footer d-flex align-items-center justify-content-between">
+                            <span class="badge bg-primary">110ml</span>
+                            <small class="fw-semibold card-cta">Mas info <i class="bi bi-arrow-right"></i></small>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Tonico de Romero -->
+            <div class="col">
+                <a class="product-card" data-bs-toggle="modal" data-bs-target="#modalTonico" role="button" tabindex="0">
+                    <div class="card shadow-sm">
+                        <img src="image/Extras/Extras_Tonico_Romero.jpeg" class="card-img-top" alt="Tonico de Romero">
+                        <div class="card-body">
+                            <p class="card-title">Tonico de Romero</p>
+                            <p class="card-text">Tonico facial para pieles mixtas o con acne.</p>
+                        </div>
+                        <div class="card-footer d-flex align-items-center justify-content-between">
+                            <span class="badge bg-primary">110ml</span>
+                            <small class="fw-semibold card-cta">Mas info <i class="bi bi-arrow-right"></i></small>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Oleato de Vetiver -->
+            <div class="col">
+                <a class="product-card" data-bs-toggle="modal" data-bs-target="#modalVetiver" role="button" tabindex="0">
+                    <div class="card shadow-sm">
+                        <img src="image/Extras/VETIVER.png" class="card-img-top" alt="Oleato de Vetiver">
+                        <div class="card-body">
+                            <p class="card-title">Oleato de Vetiver</p>
+                            <p class="card-text">Regenerador de pieles maduras. Devuelve luminosidad.</p>
+                        </div>
+                        <div class="card-footer d-flex align-items-center justify-content-between">
+                            <span class="badge bg-primary">15ml</span>
+                            <small class="fw-semibold card-cta">Mas info <i class="bi bi-arrow-right"></i></small>
+                        </div>
+                    </div>
+                </a>
+            </div>
 
         </div>
-    </div>
-</div>
+    </main>
 
-<!-- Modals -->
-<!-- Modal 1 -->
-<div class="modal fade" id="Extras1Modal" tabindex="-1" aria-labelledby="Extras1ModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h1 class="modal-title fs-5" id="Extras1ModalLabel">Vías Respiratorias</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div class="row">
-                    <div class="col-8">
-                        Combinación de 6 aceites esenciales para facilitar la descongestión.
-                        Un aceite mix de esenciales que ayuda a despejar las vías respiratorias. Contiene  eucalipto,
-                        Romero, tomillo que facilitan la descongestión , previene el catarro. Con aceite de tea tree
-                        que impide la llegada de bacterias. Propiedades antisépticas .Se recomienda utilizarlo en vapor
-                        en casos de gripe ,bronquitis y resfríos (5 gotas en 500 cc ).
-                    </div>
-                    <div class="col-4" style="padding-top: 0.5vh">
-                        <img src="media/image/Extras/Extras_Vías_Respiratorias.jpeg" class="img-fluid" alt="...">
-                        <div style="padding-top: 0.5vh">
-                            <text style="color: darkslategrey">Cantidad: 10ml</text>
+    <!-- ============================================================
+         PRODUCT MODALS
+         ============================================================ -->
+
+    <!-- Vias Respiratorias -->
+    <div class="modal fade" id="modalViasResp" tabindex="-1" aria-labelledby="modalViasRespLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-product">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-semibold" id="modalViasRespLabel">Vias Respiratorias</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-md-5 text-center">
+                            <img src="image/Extras/Extras_Vias_Respiratorias.jpeg" class="product-image" alt="Vias Respiratorias">
+                        </div>
+                        <div class="col-md-7">
+                            <p class="product-description">Combinacion de 6 aceites esenciales para facilitar la descongestion. Un aceite mix de esenciales que ayuda a despejar las vias respiratorias. Contiene eucalipto, Romero, tomillo que facilitan la descongestion, previene el catarro. Con aceite de tea tree que impide la llegada de bacterias. Propiedades antisepticas. Se recomienda utilizarlo en vapor en casos de gripe, bronquitis y resfrios (5 gotas en 500 cc).</p>
+                            <div class="d-flex gap-2">
+                                <span class="badge bg-primary">Cantidad: 10ml</span>
+                                <span class="badge badge-accent">Extra</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-            </div>
         </div>
     </div>
-</div>
 
-<!-- Modal 2 -->
-<div class="modal fade" id="Extras2Modal" tabindex="-1" aria-labelledby="Extras2ModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h1 class="modal-title fs-5" id="Extras2ModalLabel">Anti Estrés</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div class="row">
-                    <div class="col-8">
-                        Compuesto por 13 aceites esenciales en una equilibrada combinación brindan sensación de
-                        bienestar frente al estrés cotidiano. Otorga mayor serenidad en situaciones conflictivas,
-                        brinda mirada positiva en momentos desbloqueo o inestabilidad. Alivia migrañas.
-                        Ayuda insomnio. Ingredientes principales Cedro, Benjuí y Romero, Menta entre otros.
-                    </div>
-                    <div class="col-4" style="padding-top: 0.5vh">
-                        <img src="media/image/Extras/Extras_Antiestrés.jpeg" class="img-fluid" alt="...">
-                        <div style="padding-top: 0.5vh">
-                            <text style="color: darkslategrey">Cantidad: 10ml</text>
+    <!-- Anti Estres -->
+    <div class="modal fade" id="modalAntiEstres" tabindex="-1" aria-labelledby="modalAntiEstresLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-product">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-semibold" id="modalAntiEstresLabel">Anti Estres</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-md-5 text-center">
+                            <img src="image/Extras/Extras_Antiestres.jpeg" class="product-image" alt="Anti Estres">
+                        </div>
+                        <div class="col-md-7">
+                            <p class="product-description">Compuesto por 13 aceites esenciales en una equilibrada combinacion brindan sensacion de bienestar frente al estres cotidiano. Otorga mayor serenidad en situaciones conflictivas, brinda mirada positiva en momentos desbloqueo o inestabilidad. Alivia migranas. Ayuda insomnio. Ingredientes principales Cedro, Benjui y Romero, Menta entre otros.</p>
+                            <div class="d-flex gap-2">
+                                <span class="badge bg-primary">Cantidad: 10ml</span>
+                                <span class="badge badge-accent">Extra</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-            </div>
         </div>
     </div>
-</div>
 
-<!-- Modal 3 -->
-<div class="modal fade" id="Extras3Modal" tabindex="-1" aria-labelledby="Extras3ModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h1 class="modal-title fs-5" id="Extras3ModalLabel">Óleo 21</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div class="row">
-                    <div class="col-8">
-                        Mix de aceites esenciales que garantizan la armonización de emociones, renovando energía vital.
-                        Para  situaciones de cansancio y agotamiento.
-                    </div>
-                    <div class="col-4" style="padding-top: 0.5vh">
-                        <img src="media/image/Extras/Extras_Óleo_21.png" class="img-fluid" alt="...">
-                        <div style="padding-top: 0.5vh">
-                            <text style="color: darkslategrey">Cantidad: 10ml</text>
+    <!-- Oleo 21 -->
+    <div class="modal fade" id="modalOleo21" tabindex="-1" aria-labelledby="modalOleo21Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-product">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-semibold" id="modalOleo21Label">Oleo 21</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-md-5 text-center">
+                            <img src="image/Extras/Extras_Oleo_21.png" class="product-image" alt="Oleo 21">
+                        </div>
+                        <div class="col-md-7">
+                            <p class="product-description">Mix de aceites esenciales que garantizan la armonizacion de emociones, renovando energia vital. Para situaciones de cansancio y agotamiento.</p>
+                            <div class="d-flex gap-2">
+                                <span class="badge bg-primary">Cantidad: 10ml</span>
+                                <span class="badge badge-accent">Extra</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-            </div>
         </div>
     </div>
-</div>
 
-<!-- Modal 4 -->
-<div class="modal fade" id="Extras4Modal" tabindex="-1" aria-labelledby="Extras4ModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h1 class="modal-title fs-5" id="Extras4ModalLabel">Bálsamo Labial</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div class="row">
-                    <div class="col-8">
-                        Un delicado bálsamo a base de jojoba, que con sus ingredientes de vitamina C ayuda a
-                        restaurar labios resecos o agrietados. Restaurador e hidratante. Ideal para paspaduras,
-                        resfríos, labios expuestos a sol o frio.
-                    </div>
-                    <div class="col-4" style="padding-top: 0.5vh">
-                        <img src="media/image/Extras/Extras_Bálsamo_Labial.png" class="img-fluid" alt="...">
-                        <div style="padding-top: 0.5vh">
-                            <text style="color: darkslategrey">Cantidad: 10ml</text>
+    <!-- Balsamo Labial -->
+    <div class="modal fade" id="modalBalsamoLabial" tabindex="-1" aria-labelledby="modalBalsamoLabialLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-product">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-semibold" id="modalBalsamoLabialLabel">Balsamo Labial</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-md-5 text-center">
+                            <img src="image/Extras/Extras_Balsamo_Labial.png" class="product-image" alt="Balsamo Labial">
+                        </div>
+                        <div class="col-md-7">
+                            <p class="product-description">Un delicado balsamo a base de jojoba, que con sus ingredientes de vitamina C ayuda a restaurar labios resecos o agrietados. Restaurador e hidratante. Ideal para paspaduras, resfrios, labios expuestos a sol o frio.</p>
+                            <div class="d-flex gap-2">
+                                <span class="badge bg-primary">Cantidad: 10ml</span>
+                                <span class="badge badge-accent">Extra</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-            </div>
         </div>
     </div>
-</div>
 
-
-<!-- Modal 5 -->
-<div class="modal fade" id="Extras5Modal" tabindex="-1" aria-labelledby="Extras5ModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h1 class="modal-title fs-5" id="Extras5ModalLabel">Bálsamo Labial mentolado</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div class="row">
-                    <div class="col-8">
-                        Bálsamo a base de Oleato de Mentol y Alcanfor, con aceites esenciales de Pino, Cipres, Eucalipto.
-                        Descongestiona y alivia vías respirtorias en casos de resfrío, gripe, sinusitis.
-                        <br>
-                        Empleo: 3-4 veces por dia en zona nariz, puente, pecho o garganta.
-                    </div>
-                    <div class="col-4" style="padding-top: 0.5vh">
-                        <img src="media/image/Extras/Extras_Bálsamo_Labial.png" class="img-fluid" alt="...">
-                        <div style="padding-top: 0.5vh">
-                            <text style="color: darkslategrey">Cantidad: 10ml</text>
+    <!-- Balsamo Labial Mentolado -->
+    <div class="modal fade" id="modalBalsamoMentolado" tabindex="-1" aria-labelledby="modalBalsamoMentoladoLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-product">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-semibold" id="modalBalsamoMentoladoLabel">Balsamo Labial mentolado</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-md-5 text-center">
+                            <img src="image/Extras/Extras_Balsamo_Labial_Mentolado.jpeg" class="product-image" alt="Balsamo Labial mentolado">
+                        </div>
+                        <div class="col-md-7">
+                            <p class="product-description">Balsamo a base de Oleato de Mentol y Alcanfor, con aceites esenciales de Pino, Cipres, Eucalipto. Descongestiona y alivia vias respiratorias en casos de resfrio, gripe, sinusitis. Empleo: 3-4 veces por dia en zona nariz, puente, pecho o garganta.</p>
+                            <div class="d-flex gap-2">
+                                <span class="badge bg-primary">Cantidad: 10ml</span>
+                                <span class="badge badge-accent">Extra</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-            </div>
         </div>
     </div>
-</div>
 
-
-<!-- Modal 6 -->
-<div class="modal fade" id="Extras6Modal" tabindex="-1" aria-labelledby="Extras6ModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h1 class="modal-title fs-5" id="Extras6ModalLabel">Agua Micelar de Lavanda</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div class="row">
-                    <div class="col-8">
-                        Se emplea como tonico facial para pieles sensibles .Humecta y equilibra el PH de la piel.
-                        Devuelve flexibilidad . Efecto regenerador. Aplicar con algodón humedecido en rostro,
-                        cuello y escote.
-                    </div>
-                    <div class="col-4" style="padding-top: 0.5vh">
-                        <img src="media/image/Extras/Extras_Micelar_Lavanda.jpeg" class="img-fluid" alt="...">
-                        <div style="padding-top: 0.5vh">
-                            <text style="color: darkslategrey">Cantidad: 110ml</text>
+    <!-- Agua Micelar -->
+    <div class="modal fade" id="modalMicelar" tabindex="-1" aria-labelledby="modalMicelarLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-product">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-semibold" id="modalMicelarLabel">Agua Micelar de Lavanda</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-md-5 text-center">
+                            <img src="image/Extras/Extras_Micelar_Lavanda.jpeg" class="product-image" alt="Agua Micelar de Lavanda">
+                        </div>
+                        <div class="col-md-7">
+                            <p class="product-description">Se emplea como tonico facial para pieles sensibles. Humecta y equilibra el PH de la piel. Devuelve flexibilidad. Efecto regenerador. Aplicar con algodon humedecido en rostro, cuello y escote.</p>
+                            <div class="d-flex gap-2">
+                                <span class="badge bg-primary">Cantidad: 110ml</span>
+                                <span class="badge badge-accent">Extra</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-            </div>
         </div>
     </div>
-</div>
 
-<!-- Modal 7 -->
-<div class="modal fade" id="Extras7Modal" tabindex="-1" aria-labelledby="Extras7ModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h1 class="modal-title fs-5" id="Extras7ModalLabel">Tónico de Romero</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div class="row">
-                    <div class="col-8">
-                        Tonico facial para higiene recomendado para pieles  mixtas o con acné .
-                        Ayuda a eliminar residuos oleosos e impurezas. Astringente. Aplicar con algodón humedecido en
-                        rostro y cuello.
-                    </div>
-                    <div class="col-4" style="padding-top: 0.5vh">
-                        <img src="media/image/Extras/Extras_Tónico_Romero.jpeg" class="img-fluid" alt="...">
-                        <div style="padding-top: 0.5vh">
-                            <text style="color: darkslategrey">Cantidad: 110ml</text>
+    <!-- Tonico de Romero -->
+    <div class="modal fade" id="modalTonico" tabindex="-1" aria-labelledby="modalTonicoLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-product">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-semibold" id="modalTonicoLabel">Tonico de Romero</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-md-5 text-center">
+                            <img src="image/Extras/Extras_Tonico_Romero.jpeg" class="product-image" alt="Tonico de Romero">
+                        </div>
+                        <div class="col-md-7">
+                            <p class="product-description">Tonico facial para higiene recomendado para pieles mixtas o con acne. Ayuda a eliminar residuos oleosos e impurezas. Astringente. Aplicar con algodon humedecido en rostro y cuello.</p>
+                            <div class="d-flex gap-2">
+                                <span class="badge bg-primary">Cantidad: 110ml</span>
+                                <span class="badge badge-accent">Extra</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-            </div>
         </div>
     </div>
-</div>
 
-<!-- Modal 8 -->
-<div class="modal fade" id="Extras8Modal" tabindex="-1" aria-labelledby="Extras8ModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h1 class="modal-title fs-5" id="Extras8ModalLabel">Oleato de Vetiver</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div class="row">
-                    <div class="col-8">
-                        Regenerador de pieles maduras, cansadas, deslucidas. Devuelve luminosidad a la
-                        piel. Antioxidante. redefine el contorno facial.
-                        Aplicar 4-5 dotas en yema de dedos y expandir con suave masaje facial.
-                    </div>
-                    <div class="col-4" style="padding-top: 0.5vh">
-                        <img src="media/image/Extras/VETIVER.png" class="img-fluid" alt="...">
-                        <div style="padding-top: 0.5vh">
-                            <text style="color: darkslategrey">Cantidad: 15ml</text>
+    <!-- Oleato de Vetiver -->
+    <div class="modal fade" id="modalVetiver" tabindex="-1" aria-labelledby="modalVetiverLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-product">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-semibold" id="modalVetiverLabel">Oleato de Vetiver</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-md-5 text-center">
+                            <img src="image/Extras/VETIVER.png" class="product-image" alt="Oleato de Vetiver">
+                        </div>
+                        <div class="col-md-7">
+                            <p class="product-description">Regenerador de pieles maduras, cansadas, deslucidas. Devuelve luminosidad a la piel. Antioxidante. redefine el contorno facial. Aplicar 4-5 gotas en yema de dedos y expandir con suave masaje facial.</p>
+                            <div class="d-flex gap-2">
+                                <span class="badge bg-primary">Cantidad: 15ml</span>
+                                <span class="badge badge-accent">Extra</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-            </div>
         </div>
     </div>
-</div>
 
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous">
-</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
