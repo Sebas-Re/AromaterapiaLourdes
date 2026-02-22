@@ -1,736 +1,708 @@
 <!doctype html>
-<html lang="en" data-bs-theme="light">
-
+<html lang="es" data-bs-theme="light">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Aromaterapia Lourdes</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Aceites Esenciales — Aromaterapia Lourdes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link href="media/css/styles.css" rel="stylesheet">
-    <script src="media/js/theme.js"></script>
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="js/theme.js"></script>
 </head>
-
 <body>
-    <header class="sticky-top bg-body-tertiary p-0 shadow">
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">
-                    <img src="media/image/LOGO%20BN%20transparente.jpg" alt="Aromaterapia Lourdes Icon" width="40"
-                        height="40" class="d-inline-block align-text-top">
-                    <span class="navbar-brand-text">Aromaterapia Lourdes</span>
+
+    <!-- NAVBAR -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-glass shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <img src="image/LOGO%20BN%20transparente.jpg" alt="Aromaterapia Lourdes" width="36" height="36" class="rounded-circle">
+                <span class="fw-semibold">Aromaterapia Lourdes</span>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav ms-auto me-3">
+                    <li class="nav-item"><a class="nav-link" href="SobreNosotros.html">Sobre Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Aceites</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Blends.html">Blends</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Cremas.html">Cremas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Extras.html">Extras</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Contacto.html">Contacto</a></li>
+                </ul>
+                <div class="dropdown">
+                    <button class="theme-toggle-btn dropdown-toggle" type="button" id="theme-toggle-btn" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-circle-half" id="theme-toggle-icon"></i>
+                        <span id="theme-toggle-label">Auto</span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><button class="dropdown-item d-flex align-items-center gap-2" data-theme-value="light"><i class="bi bi-sun-fill"></i> Claro</button></li>
+                        <li><button class="dropdown-item d-flex align-items-center gap-2" data-theme-value="dark"><i class="bi bi-moon-stars-fill"></i> Oscuro</button></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><button class="dropdown-item d-flex align-items-center gap-2" data-theme-value="auto"><i class="bi bi-circle-half"></i> Automatico</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container py-4">
+        <h1 class="page-title">Aceites Esenciales</h1>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+
+            <!-- Benjui -->
+            <div class="col">
+                <a class="product-card" data-bs-toggle="modal" data-bs-target="#modalBenjui" role="button" tabindex="0">
+                    <div class="card shadow-sm">
+                        <img src="image/Aceites/Aceite_Benjui.png" class="card-img-top" alt="Benjui">
+                        <div class="card-body">
+                            <p class="card-title">Benjui</p>
+                            <p class="card-text">Accion estimulante y energetica. Calma sistema nervioso.</p>
+                        </div>
+                        <div class="card-footer d-flex align-items-center justify-content-between">
+                            <span class="badge bg-primary">10ml</span>
+                            <small class="fw-semibold card-cta">Mas info <i class="bi bi-arrow-right"></i></small>
+                        </div>
+                    </div>
                 </a>
-                <button class="btn btn-link theme-toggle" id="theme-toggle" aria-label="Toggle theme" type="button"><i class="bi bi-sun-fill" id="theme-icon"></i></button>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+            </div>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <div class="col">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-underline justify-content-center">
-                            <li class="nav-item">
-                                <a class="nav-link" href="SobreNosotros.html">Sobre Nosotros</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="index.html">Aceites</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="Blends.html">Blends</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="Cremas.html">Cremas</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="Extras.html">Extras</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="Contacto.html">Contacto</a>
-                            </li>
-                        </ul>
+            <!-- Bergamota -->
+            <div class="col">
+                <a class="product-card" data-bs-toggle="modal" data-bs-target="#modalBergamota" role="button" tabindex="0">
+                    <div class="card shadow-sm">
+                        <img src="image/Aceites/Aceite_Bergamota.png" class="card-img-top" alt="Bergamota">
+                        <div class="card-body">
+                            <p class="card-title">Bergamota</p>
+                            <p class="card-text">Analgesico antidepresivo, equilibrio emocional.</p>
+                        </div>
+                        <div class="card-footer d-flex align-items-center justify-content-between">
+                            <span class="badge bg-primary">10ml</span>
+                            <small class="fw-semibold card-cta">Mas info <i class="bi bi-arrow-right"></i></small>
+                        </div>
                     </div>
-
-
-                </div>
+                </a>
             </div>
-        </nav>
-    </header>
 
-    <div class="main container-fluid mb-3">
-        <div class="container text-center">
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
-                <div class="col">
-                    <a data-bs-toggle="modal" data-bs-target="#Aceite1Modal" type="button" class="modalBase"
-                       >
-                        <div class="card h-100">
-                            <img src="media/image/Aceites/Aceite_Benjui.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Benjui</h5>
-                                <p class="card-text">
-                                    <!--- texto ---->
-                                </p>
-                            </div>
+            <!-- Cedro -->
+            <div class="col">
+                <a class="product-card" data-bs-toggle="modal" data-bs-target="#modalCedro" role="button" tabindex="0">
+                    <div class="card shadow-sm">
+                        <img src="image/Aceites/Aceite_Cedro.png" class="card-img-top" alt="Cedro">
+                        <div class="card-body">
+                            <p class="card-title">Cedro</p>
+                            <p class="card-text">Recomendado en casos de tension y ansiedad.</p>
                         </div>
-                    </a>
-                </div>
-                <div class="col">
-                    <a data-bs-toggle="modal" data-bs-target="#Aceite2Modal" type="button" class="modalBase"
-                       >
-                        <div class="card h-100">
-                            <img src="media/image/Aceites/Aceite_Bergamota.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Bergamota</h5>
-                                <p class="card-text">
-                                    <!--- texto ---->
-                                </p>
-                            </div>
+                        <div class="card-footer d-flex align-items-center justify-content-between">
+                            <span class="badge bg-primary">10ml</span>
+                            <small class="fw-semibold card-cta">Mas info <i class="bi bi-arrow-right"></i></small>
                         </div>
-                    </a>
-                </div>
-                <div class="col">
-                    <a data-bs-toggle="modal" data-bs-target="#Aceite3Modal" type="button" class="modalBase"
-                       >
-                        <div class="card h-100">
-                            <img src="media/image/Aceites/Aceite_Cedro.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Cedro</h5>
-                                <p class="card-text">
-                                    <!--- texto ---->
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col">
-                    <a data-bs-toggle="modal" data-bs-target="#Aceite4Modal" type="button" class="modalBase"
-                       >
-                        <div class="card h-100">
-                            <img src="media/image/Aceites/Aceite_Enebro.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Enebro</h5>
-                                <p class="card-text">
-                                    <!--- texto ---->
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col">
-                    <a data-bs-toggle="modal" data-bs-target="#Aceite5Modal" type="button" class="modalBase"
-                       >
-                        <div class="card h-100">
-                            <img src="media/image/Aceites/Aceite_Eucalipto.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Eucalipto</h5>
-                                <p class="card-text">
-                                    <!--- texto ---->
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col">
-                    <a data-bs-toggle="modal" data-bs-target="#Aceite6Modal" type="button" class="modalBase"
-                       >
-                        <div class="card h-100">
-                            <img src="media/image/Aceites/Aceite_Gardenia.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Gardenia</h5>
-                                <p class="card-text">
-                                    <!--- texto ---->
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col">
-                    <a data-bs-toggle="modal" data-bs-target="#Aceite7Modal" type="button" class="modalBase"
-                       >
-                        <div class="card h-100">
-                            <img src="media/image/Aceites/Aceite_Geranio.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Geranio</h5>
-                                <p class="card-text">
-                                    <!--- texto ---->
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-
-                <div class="col">
-                    <a data-bs-toggle="modal" data-bs-target="#Aceite8Modal" type="button" class="modalBase"
-                       >
-                        <div class="card h-100">
-                            <img src="media/image/Aceites/Aceite_Jazmín.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Jazmín</h5>
-                                <p class="card-text">
-                                    <!--- texto ---->
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col">
-                    <a data-bs-toggle="modal" data-bs-target="#Aceite9Modal" type="button" class="modalBase"
-                       >
-                        <div class="card h-100">
-                            <img src="media/image/Aceites/Aceite_Lavanda.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Lavanda</h5>
-                                <p class="card-text">
-                                    <!--- texto ---->
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col">
-                    <a data-bs-toggle="modal" data-bs-target="#Aceite10Modal" type="button" class="modalBase"
-                       >
-                        <div class="card h-100">
-                            <img src="media/image/Aceites/Aceite_Neroli.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Neroli</h5>
-                                <p class="card-text">
-                                    <!--- texto ---->
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col">
-                    <a data-bs-toggle="modal" data-bs-target="#Aceite11Modal" type="button" class="modalBase"
-                       >
-                        <div class="card h-100">
-                            <img src="media/image/Aceites/Aceite_Romero.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Romero</h5>
-                                <p class="card-text">
-                                    <!--- texto ---->
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col">
-                    <a data-bs-toggle="modal" data-bs-target="#Aceite12Modal" type="button" class="modalBase"
-                       >
-                        <div class="card h-100">
-                            <img src="media/image/Aceites/Aceite_Salvia.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Salvia</h5>
-                                <p class="card-text">
-                                    <!--- texto ---->
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col">
-                    <a data-bs-toggle="modal" data-bs-target="#Aceite13Modal" type="button" class="modalBase"
-                       >
-                        <div class="card h-100">
-                            <img src="media/image/Aceites/Aceite_Sándalo.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Sándalo</h5>
-                                <p class="card-text">
-                                    <!--- texto ---->
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col">
-                    <a data-bs-toggle="modal" data-bs-target="#Aceite14Modal" type="button" class="modalBase"
-                       >
-                        <div class="card h-100">
-                            <img src="media/image/Aceites/Aceite_Tea_Tree.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Tea Tree</h5>
-                                <p class="card-text">
-                                    <!--- texto ---->
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col">
-                    <a data-bs-toggle="modal" data-bs-target="#Aceite15Modal" type="button" class="modalBase"
-                       >
-                        <div class="card h-100">
-                            <img src="media/image/Aceites/Aceite_Tomillo.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Tomillo</h5>
-                                <p class="card-text">
-                                    <!--- texto ---->
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
+                    </div>
+                </a>
             </div>
+
+            <!-- Enebro -->
+            <div class="col">
+                <a class="product-card" data-bs-toggle="modal" data-bs-target="#modalEnebro" role="button" tabindex="0">
+                    <div class="card shadow-sm">
+                        <img src="image/Aceites/Aceite_Enebro.png" class="card-img-top" alt="Enebro">
+                        <div class="card-body">
+                            <p class="card-title">Enebro</p>
+                            <p class="card-text">Suaviza calambres, contracturas y activa el sistema circulatorio.</p>
+                        </div>
+                        <div class="card-footer d-flex align-items-center justify-content-between">
+                            <span class="badge bg-primary">10ml</span>
+                            <small class="fw-semibold card-cta">Mas info <i class="bi bi-arrow-right"></i></small>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Eucalipto -->
+            <div class="col">
+                <a class="product-card" data-bs-toggle="modal" data-bs-target="#modalEucalipto" role="button" tabindex="0">
+                    <div class="card shadow-sm">
+                        <img src="image/Aceites/Aceite_Eucalipto.png" class="card-img-top" alt="Eucalipto">
+                        <div class="card-body">
+                            <p class="card-title">Eucalipto</p>
+                            <p class="card-text">Ayuda con vias respiratorias. Efecto analgesico y antiinflamatorio.</p>
+                        </div>
+                        <div class="card-footer d-flex align-items-center justify-content-between">
+                            <span class="badge bg-primary">10ml</span>
+                            <small class="fw-semibold card-cta">Mas info <i class="bi bi-arrow-right"></i></small>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Gardenia -->
+            <div class="col">
+                <a class="product-card" data-bs-toggle="modal" data-bs-target="#modalGardenia" role="button" tabindex="0">
+                    <div class="card shadow-sm">
+                        <img src="image/Aceites/Aceite_Gardenia.png" class="card-img-top" alt="Gardenia">
+                        <div class="card-body">
+                            <p class="card-title">Gardenia</p>
+                            <p class="card-text">Aceite esencial puro de Gardenia.</p>
+                        </div>
+                        <div class="card-footer d-flex align-items-center justify-content-between">
+                            <span class="badge bg-primary">10ml</span>
+                            <small class="fw-semibold card-cta">Mas info <i class="bi bi-arrow-right"></i></small>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Geranio -->
+            <div class="col">
+                <a class="product-card" data-bs-toggle="modal" data-bs-target="#modalGeranio" role="button" tabindex="0">
+                    <div class="card shadow-sm">
+                        <img src="image/Aceites/Aceite_Geranio.png" class="card-img-top" alt="Geranio">
+                        <div class="card-body">
+                            <p class="card-title">Geranio</p>
+                            <p class="card-text">Analgesico y anticoagulante, tonico astringente y antiseptico.</p>
+                        </div>
+                        <div class="card-footer d-flex align-items-center justify-content-between">
+                            <span class="badge bg-primary">10ml</span>
+                            <small class="fw-semibold card-cta">Mas info <i class="bi bi-arrow-right"></i></small>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Jazmin -->
+            <div class="col">
+                <a class="product-card" data-bs-toggle="modal" data-bs-target="#modalJazmin" role="button" tabindex="0">
+                    <div class="card shadow-sm">
+                        <img src="image/Aceites/Aceite_Jazmin.png" class="card-img-top" alt="Jazmin">
+                        <div class="card-body">
+                            <p class="card-title">Jazmin</p>
+                            <p class="card-text">Antidepresivo y sedante. Balsamo eficaz para pieles secas.</p>
+                        </div>
+                        <div class="card-footer d-flex align-items-center justify-content-between">
+                            <span class="badge bg-primary">10ml</span>
+                            <small class="fw-semibold card-cta">Mas info <i class="bi bi-arrow-right"></i></small>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Lavanda -->
+            <div class="col">
+                <a class="product-card" data-bs-toggle="modal" data-bs-target="#modalLavanda" role="button" tabindex="0">
+                    <div class="card shadow-sm">
+                        <img src="image/Aceites/Aceite_Lavanda.png" class="card-img-top" alt="Lavanda">
+                        <div class="card-body">
+                            <p class="card-title">Lavanda</p>
+                            <p class="card-text">Relajante. Alivia ansiedad y estres, recomendado para buen descanso.</p>
+                        </div>
+                        <div class="card-footer d-flex align-items-center justify-content-between">
+                            <span class="badge bg-primary">10ml</span>
+                            <small class="fw-semibold card-cta">Mas info <i class="bi bi-arrow-right"></i></small>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Neroli -->
+            <div class="col">
+                <a class="product-card" data-bs-toggle="modal" data-bs-target="#modalNeroli" role="button" tabindex="0">
+                    <div class="card shadow-sm">
+                        <img src="image/Aceites/Aceite_Neroli.png" class="card-img-top" alt="Neroli">
+                        <div class="card-body">
+                            <p class="card-title">Neroli</p>
+                            <p class="card-text">Antidepresivo. Alivia la ansiedad, suscita sensacion de paz.</p>
+                        </div>
+                        <div class="card-footer d-flex align-items-center justify-content-between">
+                            <span class="badge bg-primary">10ml</span>
+                            <small class="fw-semibold card-cta">Mas info <i class="bi bi-arrow-right"></i></small>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Romero -->
+            <div class="col">
+                <a class="product-card" data-bs-toggle="modal" data-bs-target="#modalRomero" role="button" tabindex="0">
+                    <div class="card shadow-sm">
+                        <img src="image/Aceites/Aceite_Romero.png" class="card-img-top" alt="Romero">
+                        <div class="card-body">
+                            <p class="card-title">Romero</p>
+                            <p class="card-text">Reduce fatiga mental y estimula la concentracion.</p>
+                        </div>
+                        <div class="card-footer d-flex align-items-center justify-content-between">
+                            <span class="badge bg-primary">10ml</span>
+                            <small class="fw-semibold card-cta">Mas info <i class="bi bi-arrow-right"></i></small>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Salvia -->
+            <div class="col">
+                <a class="product-card" data-bs-toggle="modal" data-bs-target="#modalSalvia" role="button" tabindex="0">
+                    <div class="card shadow-sm">
+                        <img src="image/Aceites/Aceite_Salvia.png" class="card-img-top" alt="Salvia">
+                        <div class="card-body">
+                            <p class="card-title">Salvia</p>
+                            <p class="card-text">Aceite esencial puro de Salvia.</p>
+                        </div>
+                        <div class="card-footer d-flex align-items-center justify-content-between">
+                            <span class="badge bg-primary">10ml</span>
+                            <small class="fw-semibold card-cta">Mas info <i class="bi bi-arrow-right"></i></small>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Sandalo -->
+            <div class="col">
+                <a class="product-card" data-bs-toggle="modal" data-bs-target="#modalSandalo" role="button" tabindex="0">
+                    <div class="card shadow-sm">
+                        <img src="image/Aceites/Aceite_Sandalo.png" class="card-img-top" alt="Sandalo">
+                        <div class="card-body">
+                            <p class="card-title">Sandalo</p>
+                            <p class="card-text">Relaja tension y ansiedad. Antiinflamatorio.</p>
+                        </div>
+                        <div class="card-footer d-flex align-items-center justify-content-between">
+                            <span class="badge bg-primary">10ml</span>
+                            <small class="fw-semibold card-cta">Mas info <i class="bi bi-arrow-right"></i></small>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Tea Tree -->
+            <div class="col">
+                <a class="product-card" data-bs-toggle="modal" data-bs-target="#modalTeaTree" role="button" tabindex="0">
+                    <div class="card shadow-sm">
+                        <img src="image/Aceites/Aceite_Tea_Tree.png" class="card-img-top" alt="Tea Tree">
+                        <div class="card-body">
+                            <p class="card-title">Tea Tree</p>
+                            <p class="card-text">Antibiotico y antiviral. Aceite bactericida de amplio espectro.</p>
+                        </div>
+                        <div class="card-footer d-flex align-items-center justify-content-between">
+                            <span class="badge bg-primary">10ml</span>
+                            <small class="fw-semibold card-cta">Mas info <i class="bi bi-arrow-right"></i></small>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Tomillo -->
+            <div class="col">
+                <a class="product-card" data-bs-toggle="modal" data-bs-target="#modalTomillo" role="button" tabindex="0">
+                    <div class="card shadow-sm">
+                        <img src="image/Aceites/Aceite_Tomillo.png" class="card-img-top" alt="Tomillo">
+                        <div class="card-body">
+                            <p class="card-title">Tomillo</p>
+                            <p class="card-text">Expectorante. Descongestiona. Activa la circulacion.</p>
+                        </div>
+                        <div class="card-footer d-flex align-items-center justify-content-between">
+                            <span class="badge bg-primary">10ml</span>
+                            <small class="fw-semibold card-cta">Mas info <i class="bi bi-arrow-right"></i></small>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
         </div>
-    </div>
+    </main>
 
+    <!-- ============================================================
+         PRODUCT MODALS
+         ============================================================ -->
 
-
-
-    <!-- Modals -->
-    <!-- Modal 1 -->
-    <div class="modal fade" id="Aceite1Modal" tabindex="-1" aria-labelledby="Aceite1ModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg">
+    <!-- Benjui -->
+    <div class="modal fade" id="modalBenjui" tabindex="-1" aria-labelledby="modalBenjuiLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-product">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="Aceite1ModalLabel">Aceite de Benjui</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h5 class="modal-title fw-semibold" id="modalBenjuiLabel">Aceite de Benjui</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                 </div>
                 <div class="modal-body">
-                    <div class="row">
-                        <div class="col-8">
-                            Ayuda en casos de dermatitis. Acción estimulante y energética. Libera bloqueos.
-                            Calma sistema nervioso. Útil en casos de: depresión, agotamiento mental y emocional.
+                    <div class="row g-4">
+                        <div class="col-md-5 text-center">
+                            <img src="image/Aceites/Aceite_Benjui.png" class="product-image" alt="Benjui">
                         </div>
-                        <div class="col-4 modal-img-section">
-                            <img src="media/image/Aceites/Aceite_Benjui.png" class="img-fluid" alt="...">
-                            <div class="modal-img-section">
-                                <span class="product-qty">Cantidad: 10ml</span>
+                        <div class="col-md-7">
+                            <p class="product-description">Ayuda en casos de dermatitis. Accion estimulante y energetica. Libera bloqueos. Calma sistema nervioso. Util en casos de: depresion, agotamiento mental y emocional.</p>
+                            <div class="d-flex gap-2">
+                                <span class="badge bg-primary">Cantidad: 10ml</span>
+                                <span class="badge badge-accent">Aceite Esencial</span>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Modal 2 -->
-    <div class="modal fade" id="Aceite2Modal" tabindex="-1" aria-labelledby="Aceite2ModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg">
+    <!-- Bergamota -->
+    <div class="modal fade" id="modalBergamota" tabindex="-1" aria-labelledby="modalBergamotaLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-product">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="Aceite2ModalLabel">Aceite de Bergamota</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h5 class="modal-title fw-semibold" id="modalBergamotaLabel">Aceite de Bergamota</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                 </div>
                 <div class="modal-body">
-                    <div class="row">
-                        <div class="col-8">
-                            Analgésico antidepresivo, equilibrio emocional. Calma la tensión nerviosa actuando como
-                            sedante.
-                            Favorece producción d serotonina. Reduce la ansiedad y el estrés. Ideal para casos de
-                            depresión.
-                            Brinda autoconfianza y seguridad.
+                    <div class="row g-4">
+                        <div class="col-md-5 text-center">
+                            <img src="image/Aceites/Aceite_Bergamota.png" class="product-image" alt="Bergamota">
                         </div>
-                        <div class="col-4 modal-img-section">
-                            <img src="media/image/Aceites/Aceite_Bergamota.png" class="img-fluid" alt="...">
-                            <div class="modal-img-section">
-                                <span class="product-qty">Cantidad: 10ml</span>
+                        <div class="col-md-7">
+                            <p class="product-description">Analgesico antidepresivo, equilibrio emocional. Calma la tension nerviosa actuando como sedante. Favorece produccion d serotonina. Reduce la ansiedad y el estres. Ideal para casos de depresion. Brinda autoconfianza y seguridad.</p>
+                            <div class="d-flex gap-2">
+                                <span class="badge bg-primary">Cantidad: 10ml</span>
+                                <span class="badge badge-accent">Aceite Esencial</span>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Modal 3 -->
-    <div class="modal fade" id="Aceite3Modal" tabindex="-1" aria-labelledby="Aceite3ModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg">
+    <!-- Cedro -->
+    <div class="modal fade" id="modalCedro" tabindex="-1" aria-labelledby="modalCedroLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-product">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="Aceite3ModalLabel">Aceite de Cedro</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h5 class="modal-title fw-semibold" id="modalCedroLabel">Aceite de Cedro</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                 </div>
                 <div class="modal-body">
-                    <div class="row">
-                        <div class="col-8">
-                            Recomendado en casos de tensión y ansiedad. Impulsa sentimientos de autoconfianza y
-                            fortaleza.
-                            Tonifica los músculos.
+                    <div class="row g-4">
+                        <div class="col-md-5 text-center">
+                            <img src="image/Aceites/Aceite_Cedro.png" class="product-image" alt="Cedro">
                         </div>
-                        <div class="col-4 modal-img-section">
-                            <img src="media/image/Aceites/Aceite_Cedro.png" class="img-fluid" alt="...">
-                            <div class="modal-img-section">
-                                <span class="product-qty">Cantidad: 10ml</span>
+                        <div class="col-md-7">
+                            <p class="product-description">Recomendado en casos de tension y ansiedad. Impulsa sentimientos de autoconfianza y fortaleza. Tonifica los musculos.</p>
+                            <div class="d-flex gap-2">
+                                <span class="badge bg-primary">Cantidad: 10ml</span>
+                                <span class="badge badge-accent">Aceite Esencial</span>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Modal 4 -->
-    <div class="modal fade" id="Aceite4Modal" tabindex="-1" aria-labelledby="Aceite4ModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg">
+    <!-- Enebro -->
+    <div class="modal fade" id="modalEnebro" tabindex="-1" aria-labelledby="modalEnebroLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-product">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="Aceite4ModalLabel">Aceite de Enebro</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h5 class="modal-title fw-semibold" id="modalEnebroLabel">Aceite de Enebro</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                 </div>
                 <div class="modal-body">
-                    <div class="row">
-                        <div class="col-8">
-                            Ideal para tema músculos: suaviza calambres, contracturas y activa el sistema circulatorio.
-                            Recomendado para artritis, reuma. Accion estimulante y energética
+                    <div class="row g-4">
+                        <div class="col-md-5 text-center">
+                            <img src="image/Aceites/Aceite_Enebro.png" class="product-image" alt="Enebro">
                         </div>
-                        <div class="col-4 modal-img-section">
-                            <img src="media/image/Aceites/Aceite_Enebro.png" class="img-fluid" alt="...">
-                            <div class="modal-img-section">
-                                <span class="product-qty">Cantidad: 10ml</span>
+                        <div class="col-md-7">
+                            <p class="product-description">Ideal para tema musculos: suaviza calambres, contracturas y activa el sistema circulatorio. Recomendado para artritis, reuma. Accion estimulante y energetica</p>
+                            <div class="d-flex gap-2">
+                                <span class="badge bg-primary">Cantidad: 10ml</span>
+                                <span class="badge badge-accent">Aceite Esencial</span>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Modal 5 -->
-    <div class="modal fade" id="Aceite5Modal" tabindex="-1" aria-labelledby="Aceite5ModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg">
+    <!-- Eucalipto -->
+    <div class="modal fade" id="modalEucalipto" tabindex="-1" aria-labelledby="modalEucaliptoLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-product">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="Aceite5ModalLabel">Aceite de Eucalipto</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h5 class="modal-title fw-semibold" id="modalEucaliptoLabel">Aceite de Eucalipto</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                 </div>
                 <div class="modal-body">
-                    <div class="row">
-                        <div class="col-8">
-                            Ayuda con vías respiratorias (expectorante). Efecto analgésico y antiinflamatorio.
-                            Balsamico.Eficaz bactericida en vías respiratorias. Activa la circulación.
+                    <div class="row g-4">
+                        <div class="col-md-5 text-center">
+                            <img src="image/Aceites/Aceite_Eucalipto.png" class="product-image" alt="Eucalipto">
                         </div>
-                        <div class="col-4 modal-img-section">
-                            <img src="media/image/Aceites/Aceite_Eucalipto.png" class="img-fluid" alt="...">
-                            <div class="modal-img-section">
-                                <span class="product-qty">Cantidad: 10ml</span>
+                        <div class="col-md-7">
+                            <p class="product-description">Ayuda con vias respiratorias (expectorante). Efecto analgesico y antiinflamatorio. Balsamico. Eficaz bactericida en vias respiratorias. Activa la circulacion.</p>
+                            <div class="d-flex gap-2">
+                                <span class="badge bg-primary">Cantidad: 10ml</span>
+                                <span class="badge badge-accent">Aceite Esencial</span>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Modal 6 -->
-    <div class="modal fade" id="Aceite6Modal" tabindex="-1" aria-labelledby="Aceite6ModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg">
+    <!-- Gardenia -->
+    <div class="modal fade" id="modalGardenia" tabindex="-1" aria-labelledby="modalGardeniaLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-product">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="Aceite6ModalLabel">Aceite de Gardenia</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h5 class="modal-title fw-semibold" id="modalGardeniaLabel">Aceite de Gardenia</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                 </div>
                 <div class="modal-body">
-                    <div class="row">
-                        <div class="col-8">
-                            DESCRIPCION NO ENCONTRADA PARA GARDENIA
+                    <div class="row g-4">
+                        <div class="col-md-5 text-center">
+                            <img src="image/Aceites/Aceite_Gardenia.png" class="product-image" alt="Gardenia">
                         </div>
-                        <div class="col-4 modal-img-section">
-                            <img src="media/image/Aceites/Aceite_Gardenia.png" class="img-fluid" alt="...">
-                            <div class="modal-img-section">
-                                <span class="product-qty">Cantidad: 10ml</span>
+                        <div class="col-md-7">
+                            <p class="product-description">Aceite esencial puro de Gardenia.</p>
+                            <div class="d-flex gap-2">
+                                <span class="badge bg-primary">Cantidad: 10ml</span>
+                                <span class="badge badge-accent">Aceite Esencial</span>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Modal 7 -->
-    <div class="modal fade" id="Aceite7Modal" tabindex="-1" aria-labelledby="Aceite7ModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg">
+    <!-- Geranio -->
+    <div class="modal fade" id="modalGeranio" tabindex="-1" aria-labelledby="modalGeranioLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-product">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="Aceite7ModalLabel">Aceite de Geranio</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h5 class="modal-title fw-semibold" id="modalGeranioLabel">Aceite de Geranio</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                 </div>
                 <div class="modal-body">
-                    <div class="row">
-                        <div class="col-8">
-                            Analgésico y anticoagulante, tónico astringente y antiséptico. Calma el sistema nervioso en
-                            situaciones de ansiedad y depresión. Regulador del sistema hormonal. Útil en casos de
-                            dolores menstruales.
-                            Diurético, descongestivo del sistema urinario. Ayuda en pieles mixtas o deshidratadas a
-                            equilibrar la secreción sebácea.
+                    <div class="row g-4">
+                        <div class="col-md-5 text-center">
+                            <img src="image/Aceites/Aceite_Geranio.png" class="product-image" alt="Geranio">
                         </div>
-                        <div class="col-4 modal-img-section">
-                            <img src="media/image/Aceites/Aceite_Geranio.png" class="img-fluid" alt="...">
-                            <div class="modal-img-section">
-                                <span class="product-qty">Cantidad: 10ml</span>
+                        <div class="col-md-7">
+                            <p class="product-description">Analgesico y anticoagulante, tonico astringente y antiseptico. Calma el sistema nervioso en situaciones de ansiedad y depresion. Regulador del sistema hormonal. Util en casos de dolores menstruales. Diuretico, descongestivo del sistema urinario. Ayuda en pieles mixtas o deshidratadas a equilibrar la secrecion sebacea.</p>
+                            <div class="d-flex gap-2">
+                                <span class="badge bg-primary">Cantidad: 10ml</span>
+                                <span class="badge badge-accent">Aceite Esencial</span>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Modal 8 -->
-    <div class="modal fade" id="Aceite8Modal" tabindex="-1" aria-labelledby="Aceite8ModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg">
+    <!-- Jazmin -->
+    <div class="modal fade" id="modalJazmin" tabindex="-1" aria-labelledby="modalJazminLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-product">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="Aceite8ModalLabel">Aceite de Jazmín</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h5 class="modal-title fw-semibold" id="modalJazminLabel">Aceite de Jazmin</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                 </div>
                 <div class="modal-body">
-                    <div class="row">
-                        <div class="col-8">
-                            Antidepresivo y sedante. Bálsamo eficaz para pieles secas y sensibles. Genera sentimientos
-                            de confianza .
-                            Impulsa la sensualidad. Desinhibe.
+                    <div class="row g-4">
+                        <div class="col-md-5 text-center">
+                            <img src="image/Aceites/Aceite_Jazmin.png" class="product-image" alt="Jazmin">
                         </div>
-                        <div class="col-4 modal-img-section">
-                            <img src="media/image/Aceites/Aceite_Jazmín.png" class="img-fluid" alt="...">
-                            <div class="modal-img-section">
-                                <span class="product-qty">Cantidad: 10ml</span>
+                        <div class="col-md-7">
+                            <p class="product-description">Antidepresivo y sedante. Balsamo eficaz para pieles secas y sensibles. Genera sentimientos de confianza. Impulsa la sensualidad. Desinhibe.</p>
+                            <div class="d-flex gap-2">
+                                <span class="badge bg-primary">Cantidad: 10ml</span>
+                                <span class="badge badge-accent">Aceite Esencial</span>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Modal 9 -->
-    <div class="modal fade" id="Aceite9Modal" tabindex="-1" aria-labelledby="Aceite9ModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg">
+    <!-- Lavanda -->
+    <div class="modal fade" id="modalLavanda" tabindex="-1" aria-labelledby="modalLavandaLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-product">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="Aceite9ModalLabel">Aceite de Lavanda</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h5 class="modal-title fw-semibold" id="modalLavandaLabel">Aceite de Lavanda</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                 </div>
                 <div class="modal-body">
-                    <div class="row">
-                        <div class="col-8">
-                            Relajante. Tiene beneficios en tratamiento de quemaduras y eczemas de piel. Antiseptico.
-                            Alivia ansiedad y estrés, recomendado para buen descanso. Repele insectos. Ayuda insomnio.
-                            Se emplea para acompañar momentos de ansiedad pánico y tensión nerviosa.
+                    <div class="row g-4">
+                        <div class="col-md-5 text-center">
+                            <img src="image/Aceites/Aceite_Lavanda.png" class="product-image" alt="Lavanda">
                         </div>
-                        <div class="col-4 modal-img-section">
-                            <img src="media/image/Aceites/Aceite_Lavanda.png" class="img-fluid" alt="...">
-                            <div class="modal-img-section">
-                                <span class="product-qty">Cantidad: 10ml</span>
+                        <div class="col-md-7">
+                            <p class="product-description">Relajante. Tiene beneficios en tratamiento de quemaduras y eczemas de piel. Antiseptico. Alivia ansiedad y estres, recomendado para buen descanso. Repele insectos. Ayuda insomnio. Se emplea para acompanar momentos de ansiedad panico y tension nerviosa.</p>
+                            <div class="d-flex gap-2">
+                                <span class="badge bg-primary">Cantidad: 10ml</span>
+                                <span class="badge badge-accent">Aceite Esencial</span>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Modal 10 -->
-    <div class="modal fade" id="Aceite10Modal" tabindex="-1" aria-labelledby="Aceite10ModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg">
+    <!-- Neroli -->
+    <div class="modal fade" id="modalNeroli" tabindex="-1" aria-labelledby="modalNeroliLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-product">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="Aceite10ModalLabel">Aceite de Neroli</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h5 class="modal-title fw-semibold" id="modalNeroliLabel">Aceite de Neroli</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                 </div>
                 <div class="modal-body">
-                    <div class="row">
-                        <div class="col-8">
-                            Antidepresivo. Alivia la ansiedad, suscita sensación de paz. Efecto armonizador sobre el
-                            sistema nervioso simpático.
+                    <div class="row g-4">
+                        <div class="col-md-5 text-center">
+                            <img src="image/Aceites/Aceite_Neroli.png" class="product-image" alt="Neroli">
                         </div>
-                        <div class="col-4 modal-img-section">
-                            <img src="media/image/Aceites/Aceite_Neroli.png" class="img-fluid" alt="...">
-                            <div class="modal-img-section">
-                                <span class="product-qty">Cantidad: 10ml</span>
+                        <div class="col-md-7">
+                            <p class="product-description">Antidepresivo. Alivia la ansiedad, suscita sensacion de paz. Efecto armonizador sobre el sistema nervioso simpatico.</p>
+                            <div class="d-flex gap-2">
+                                <span class="badge bg-primary">Cantidad: 10ml</span>
+                                <span class="badge badge-accent">Aceite Esencial</span>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Modal 11 -->
-    <div class="modal fade" id="Aceite11Modal" tabindex="-1" aria-labelledby="Aceite11ModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg">
+    <!-- Romero -->
+    <div class="modal fade" id="modalRomero" tabindex="-1" aria-labelledby="modalRomeroLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-product">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="Aceite11ModalLabel">Aceite de Romero</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h5 class="modal-title fw-semibold" id="modalRomeroLabel">Aceite de Romero</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                 </div>
                 <div class="modal-body">
-                    <div class="row">
-                        <div class="col-8">
-                            Reduce fatiga mental y estimula la concentración. Reconforta dolores musculares y
-                            articulares.
-                            Activa los folículos capilares promoviendo un cuero cabelludo saludable con cabello fuerte y
-                            sano. Combate cansancio cuando necesitas energía. Útil para tratar el vértigo.
+                    <div class="row g-4">
+                        <div class="col-md-5 text-center">
+                            <img src="image/Aceites/Aceite_Romero.png" class="product-image" alt="Romero">
                         </div>
-                        <div class="col-4 modal-img-section">
-                            <img src="media/image/Aceites/Aceite_Romero.png" class="img-fluid" alt="...">
-                            <div class="modal-img-section">
-                                <span class="product-qty">Cantidad: 10ml</span>
+                        <div class="col-md-7">
+                            <p class="product-description">Reduce fatiga mental y estimula la concentracion. Reconforta dolores musculares y articulares. Activa los foliculos capilares promoviendo un cuero cabelludo saludable con cabello fuerte y sano. Combate cansancio cuando necesitas energia. Util para tratar el vertigo.</p>
+                            <div class="d-flex gap-2">
+                                <span class="badge bg-primary">Cantidad: 10ml</span>
+                                <span class="badge badge-accent">Aceite Esencial</span>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Modal 12 -->
-    <div class="modal fade" id="Aceite12Modal" tabindex="-1" aria-labelledby="Aceite12ModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg">
+    <!-- Salvia -->
+    <div class="modal fade" id="modalSalvia" tabindex="-1" aria-labelledby="modalSalviaLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-product">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="Aceite12ModalLabel">Aceite de Salvia</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h5 class="modal-title fw-semibold" id="modalSalviaLabel">Aceite de Salvia</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                 </div>
                 <div class="modal-body">
-                    <div class="row">
-                        <div class="col-8">
-                            DESCRIPCION NO ENCONTRADA PARA SALVIA
+                    <div class="row g-4">
+                        <div class="col-md-5 text-center">
+                            <img src="image/Aceites/Aceite_Salvia.png" class="product-image" alt="Salvia">
                         </div>
-                        <div class="col-4 modal-img-section">
-                            <img src="media/image/Aceites/Aceite_Salvia.png" class="img-fluid" alt="...">
-                            <div class="modal-img-section">
-                                <span class="product-qty">Cantidad: 10ml</span>
+                        <div class="col-md-7">
+                            <p class="product-description">Aceite esencial puro de Salvia.</p>
+                            <div class="d-flex gap-2">
+                                <span class="badge bg-primary">Cantidad: 10ml</span>
+                                <span class="badge badge-accent">Aceite Esencial</span>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Modal 13 -->
-    <div class="modal fade" id="Aceite13Modal" tabindex="-1" aria-labelledby="Aceite13ModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg">
+    <!-- Sandalo -->
+    <div class="modal fade" id="modalSandalo" tabindex="-1" aria-labelledby="modalSandaloLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-product">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="Aceite13ModalLabel">Aceite de Sándalo</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h5 class="modal-title fw-semibold" id="modalSandaloLabel">Aceite de Sandalo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                 </div>
                 <div class="modal-body">
-                    <div class="row">
-                        <div class="col-8">
-                            Relaja tensión y ansiedad. Antiinflamatorio. Activa el sistema inmunológico.
-                            Impulsa desbloqueos emocionales, acompaña duelos.
+                    <div class="row g-4">
+                        <div class="col-md-5 text-center">
+                            <img src="image/Aceites/Aceite_Sandalo.png" class="product-image" alt="Sandalo">
                         </div>
-                        <div class="col-4 modal-img-section">
-                            <img src="media/image/Aceites/Aceite_Sándalo.png" class="img-fluid" alt="...">
-                            <div class="modal-img-section">
-                                <span class="product-qty">Cantidad: 10ml</span>
+                        <div class="col-md-7">
+                            <p class="product-description">Relaja tension y ansiedad. Antiinflamatorio. Activa el sistema inmunologico. Impulsa desbloqueos emocionales, acompana duelos.</p>
+                            <div class="d-flex gap-2">
+                                <span class="badge bg-primary">Cantidad: 10ml</span>
+                                <span class="badge badge-accent">Aceite Esencial</span>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Modal 14 -->
-    <div class="modal fade" id="Aceite14Modal" tabindex="-1" aria-labelledby="Aceite14ModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg">
+    <!-- Tea Tree -->
+    <div class="modal fade" id="modalTeaTree" tabindex="-1" aria-labelledby="modalTeaTreeLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-product">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="Aceite14ModalLabel">Aceite de Tea Tree</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h5 class="modal-title fw-semibold" id="modalTeaTreeLabel">Aceite de Tea Tree</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                 </div>
                 <div class="modal-body">
-                    <div class="row">
-                        <div class="col-8">
-                            Antibiótico y antiviral. Aceite bactericida de amplio espectro. Recomendado para vías
-                            respiratorias.
-                            Ataca infecciones y hongos. Recomendado para el acné. Fortalece el sistema inmunológico
+                    <div class="row g-4">
+                        <div class="col-md-5 text-center">
+                            <img src="image/Aceites/Aceite_Tea_Tree.png" class="product-image" alt="Tea Tree">
                         </div>
-                        <div class="col-4 modal-img-section">
-                            <img src="media/image/Aceites/Aceite_Tea_Tree.png" class="img-fluid" alt="...">
-                            <div class="modal-img-section">
-                                <span class="product-qty">Cantidad: 10ml</span>
+                        <div class="col-md-7">
+                            <p class="product-description">Antibiotico y antiviral. Aceite bactericida de amplio espectro. Recomendado para vias respiratorias. Ataca infecciones y hongos. Recomendado para el acne. Fortalece el sistema inmunologico</p>
+                            <div class="d-flex gap-2">
+                                <span class="badge bg-primary">Cantidad: 10ml</span>
+                                <span class="badge badge-accent">Aceite Esencial</span>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Modal 15 -->
-    <div class="modal fade" id="Aceite15Modal" tabindex="-1" aria-labelledby="Aceite15ModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg">
+    <!-- Tomillo -->
+    <div class="modal fade" id="modalTomillo" tabindex="-1" aria-labelledby="modalTomilloLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-product">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="Aceite15ModalLabel">Aceite de Tomillo</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h5 class="modal-title fw-semibold" id="modalTomilloLabel">Aceite de Tomillo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                 </div>
                 <div class="modal-body">
-                    <div class="row">
-                        <div class="col-8">
-                            Expectorante . Descongestiona. Afloja catarro y flema. Indicado para gripe, bronquitis,
-                            resfríos, sinusitis. Activa la circulación previniendo calambres. Activa el sistema
-                            inmunológico.
-                            Eficaz expectorante y antibacterial /antimicrobiano
+                    <div class="row g-4">
+                        <div class="col-md-5 text-center">
+                            <img src="image/Aceites/Aceite_Tomillo.png" class="product-image" alt="Tomillo">
                         </div>
-                        <div class="col-4 modal-img-section">
-                            <img src="media/image/Aceites/Aceite_Tomillo.png" class="img-fluid" alt="...">
-                            <div class="modal-img-section">
-                                <span class="product-qty">Cantidad: 10ml</span>
+                        <div class="col-md-7">
+                            <p class="product-description">Expectorante. Descongestiona. Afloja catarro y flema. Indicado para gripe, bronquitis, resfrios, sinusitis. Activa la circulacion previniendo calambres. Activa el sistema inmunologico. Eficaz expectorante y antibacterial /antimicrobiano</p>
+                            <div class="d-flex gap-2">
+                                <span class="badge bg-primary">Cantidad: 10ml</span>
+                                <span class="badge badge-accent">Aceite Esencial</span>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
-
 </html>

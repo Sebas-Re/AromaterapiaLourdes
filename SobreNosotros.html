@@ -1,103 +1,124 @@
 <!doctype html>
-<html lang="en" data-bs-theme="light">
-
+<html lang="es" data-bs-theme="light">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Aromaterapia Lourdes</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Sobre Nosotros — Aromaterapia Lourdes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link href="media/css/styles.css" rel="stylesheet">
-    <script src="media/js/theme.js"></script>
+    <link href="css/styles.css?v1" rel="stylesheet">
+    <script src="js/theme.js?v1"></script>
 </head>
-
 <body>
-    <header class="sticky-top bg-body-tertiary p-0 shadow">
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">
-                    <img src="media/image/LOGO%20BN%20transparente.jpg" alt="Aromaterapia Lourdes Icon" width="40"
-                        height="40" class="d-inline-block align-text-top">
-                    <span class="navbar-brand-text">Aromaterapia Lourdes</span>
-                </a>
-                <button class="btn btn-link theme-toggle" id="theme-toggle" aria-label="Toggle theme" type="button"><i class="bi bi-sun-fill" id="theme-icon"></i></button>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <div class="col">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-underline justify-content-center">
-                            <li class="nav-item">
-                                <a class="nav-link active" href="SobreNosotros.html">Sobre Nosotros</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="index.html">Aceites</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="Blends.html">Blends</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="Cremas.html">Cremas</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="Extras.html">Extras</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="Contacto.html">Contacto</a>
-                            </li>
-                        </ul>
-                    </div>
-
-
+    <!-- NAVBAR -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-glass shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <img src="image/LOGO%20BN%20transparente.jpg" alt="Aromaterapia Lourdes" width="36" height="36" class="rounded-circle">
+                <span class="fw-semibold">Aromaterapia Lourdes</span>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav ms-auto me-3">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="SobreNosotros.html">Sobre Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Aceites</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Blends.html">Blends</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Cremas.html">Cremas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Extras.html">Extras</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Contacto.html">Contacto</a></li>
+                </ul>
+                <div class="dropdown">
+                    <button class="theme-toggle-btn dropdown-toggle" type="button" id="theme-toggle-btn" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-circle-half" id="theme-toggle-icon"></i>
+                        <span id="theme-toggle-label">Auto</span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><button class="dropdown-item d-flex align-items-center gap-2" data-theme-value="light"><i class="bi bi-sun-fill"></i> Claro</button></li>
+                        <li><button class="dropdown-item d-flex align-items-center gap-2" data-theme-value="dark"><i class="bi bi-moon-stars-fill"></i> Oscuro</button></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><button class="dropdown-item d-flex align-items-center gap-2" data-theme-value="auto"><i class="bi bi-circle-half"></i> Automatico</button></li>
+                    </ul>
                 </div>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
-    <div class="main container-fluid">
-        <div class="section row align-items-center py-5 mb-4 mb-md-5" id="p1">
-            <div class="col-12 col-md-6 d-flex flex-column gap-3">
-                <h1 class="display-3 fw-bold order-1">EMPRENDIMIENTO</h1>
-                <img src="media/image/SobreNosotros/SobreNosotros_1.jpeg" alt="SobreNosotros1"
-                    class="img-fluid d-block d-md-none order-2 about-img-mobile">
-                <p class="lead order-3">
-                    Desde 2020 venimos trabajando para ofrecer bienestar y equilibrio natural,
-                    a través de la combinación de Aceites Esenciales. Buscando acompañar la Homeostasis diaria y
-                    constante en quienes los emplean.
-                </p>
-            </div>
-            <div class="col-12 col-md-6 d-none d-md-flex align-items-center justify-content-center">
-                <img src="media/image/SobreNosotros/SobreNosotros_1.jpeg" alt="SobreNosotros1" class="img-fluid about-img-desktop">
+    <main class="container py-4">
+
+        <h1 class="page-title">Sobre Nosotros</h1>
+
+        <!-- ============================================================
+             Desktop layout (lg+): magazine split cards
+             ============================================================ -->
+
+        <!-- Section 1: Emprendimiento — circle image left, text right -->
+        <div class="card shadow magazine-card overflow-hidden mb-4 d-none d-lg-block">
+            <div class="row g-0 align-items-stretch">
+                <div class="col-lg-4 d-flex align-items-center justify-content-center py-4 magazine-circle-panel">
+                    <img src="image/SobreNosotros/SobreNosotros_1.jpeg" alt="Emprendimiento" class="about-circle-photo">
+                </div>
+                <div class="col-lg-8 d-flex align-items-center">
+                    <div class="card-body">
+                        <h2>Emprendimiento</h2>
+                        <hr>
+                        <p class="body-text mb-0">Desde 2020 venimos trabajando para ofrecer bienestar y equilibrio natural, a traves de la combinacion de Aceites Esenciales. Buscando acompanar la Homeostasis diaria y constante en quienes los emplean.</p>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <hr class="d-none d-md-block my-2">
-
-        <div class="section row align-items-center py-5 mb-4 mb-md-5" id="p2">
-            <div class="col-12 col-md-6 d-flex flex-column gap-3">
-                <h1 class="display-3 fw-bold order-1">NUESTRA FORTALEZA</h1>
-                <img src="media/image/SobreNosotros/SobreNosotros_2.jpeg" alt="SobreNosotros2"
-                    class="img-fluid d-block d-md-none order-2 about-img-mobile">
-                <p class="lead order-3">
-                    Ofrecemos productos extraídos de plantaciones argentinas, trabajados a conciencia para lograr
-                    armonía
-                    tanto física como emocional. Aceites Esenciales, Oleatos, Hidrolatos y Cremas que actúan con un
-                    único objetivo:
-                    impulsar el empleo de productos naturales para acompañar la vida cotidiana familiar.
-                </p>
-            </div>
-            <div class="col-12 col-md-6 d-none d-md-flex align-items-center justify-content-center">
-                <img src="media/image/SobreNosotros/SobreNosotros_2.jpeg" alt="SobreNosotros2" class="img-fluid about-img-desktop">
+        <!-- Section 2: Nuestra Fortaleza — text left, full-bleed image right -->
+        <div class="card shadow magazine-card overflow-hidden d-none d-lg-block">
+            <div class="row g-0 align-items-stretch">
+                <div class="col-lg-7 d-flex align-items-center order-lg-1 order-2">
+                    <div class="card-body">
+                        <h2>Nuestra Fortaleza</h2>
+                        <hr>
+                        <p class="body-text mb-0">Ofrecemos productos extraidos de plantaciones argentinas, trabajados a conciencia para lograr armonia tanto fisica como emocional. Aceites Esenciales, Oleatos, Hidrolatos y Cremas que actuan con un unico objetivo: impulsar el empleo de productos naturales para acompanar la vida cotidiana familiar.</p>
+                    </div>
+                </div>
+                <div class="col-lg-5 order-lg-2 order-1">
+                    <img src="image/SobreNosotros/SobreNosotros_2.jpeg" class="magazine-img" alt="Nuestra Fortaleza">
+                </div>
             </div>
         </div>
-    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <!-- ============================================================
+             Mobile / tablet layout (< lg): portrait cards
+             ============================================================ -->
+        <div class="row g-4 justify-content-center d-lg-none">
+
+            <div class="col-sm-10 col-md-5">
+                <div class="card shadow portrait-card portrait-card-short overflow-hidden">
+                    <img src="image/SobreNosotros/SobreNosotros_1.jpeg" class="card-img-top" alt="Emprendimiento">
+                    <div class="card-body">
+                        <div class="card-number">01</div>
+                        <h2>Emprendimiento</h2>
+                        <hr>
+                        <p class="body-text mb-0">Desde 2020 venimos trabajando para ofrecer bienestar y equilibrio natural, a traves de la combinacion de Aceites Esenciales. Buscando acompanar la Homeostasis diaria y constante en quienes los emplean.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-10 col-md-5">
+                <div class="card shadow portrait-card overflow-hidden">
+                    <img src="image/SobreNosotros/SobreNosotros_2.jpeg" class="card-img-top" alt="Nuestra Fortaleza">
+                    <div class="card-body">
+                        <div class="card-number">02</div>
+                        <h2>Nuestra Fortaleza</h2>
+                        <hr>
+                        <p class="body-text mb-0">Ofrecemos productos extraidos de plantaciones argentinas, trabajados a conciencia para lograr armonia tanto fisica como emocional. Aceites Esenciales, Oleatos, Hidrolatos y Cremas que actuan con un unico objetivo: impulsar el empleo de productos naturales para acompanar la vida cotidiana familiar.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
-
 </html>

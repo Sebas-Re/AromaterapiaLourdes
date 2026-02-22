@@ -1,340 +1,321 @@
 <!doctype html>
-<html lang="en" data-bs-theme="light">
+<html lang="es" data-bs-theme="light">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Aromaterapia Lourdes</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Cremas — Aromaterapia Lourdes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link href="media/css/styles.css" rel="stylesheet">
-    <script src="media/js/theme.js"></script>
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="js/theme.js"></script>
 </head>
-
 <body>
-<header class="sticky-top bg-body-tertiary p-0 shadow">
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-                <img src="media/image/LOGO%20BN%20transparente.jpg" alt="Aromaterapia Lourdes Icon" width="40" height="40" class="d-inline-block align-text-top">
-                <span class="navbar-brand-text">Aromaterapia Lourdes</span>
+
+    <!-- NAVBAR -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-glass shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <img src="image/LOGO%20BN%20transparente.jpg" alt="Aromaterapia Lourdes" width="36" height="36" class="rounded-circle">
+                <span class="fw-semibold">Aromaterapia Lourdes</span>
             </a>
-            <button class="btn btn-link theme-toggle" id="theme-toggle" aria-label="Toggle theme" type="button"><i class="bi bi-sun-fill" id="theme-icon"></i></button>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Menu">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <div class="col">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-underline justify-content-center">
-                        <li class="nav-item">
-                            <a class="nav-link" href="SobreNosotros.html">Sobre Nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="index.html">Aceites</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="Blends.html">Blends</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="Cremas.html">Cremas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="Extras.html">Extras</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="Contacto.html">Contacto</a>
-                        </li>
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav ms-auto me-3">
+                    <li class="nav-item"><a class="nav-link" href="SobreNosotros.html">Sobre Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Aceites</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Blends.html">Blends</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="Cremas.html">Cremas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Extras.html">Extras</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Contacto.html">Contacto</a></li>
+                </ul>
+                <div class="dropdown">
+                    <button class="theme-toggle-btn dropdown-toggle" type="button" id="theme-toggle-btn" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-circle-half" id="theme-toggle-icon"></i>
+                        <span id="theme-toggle-label">Auto</span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><button class="dropdown-item d-flex align-items-center gap-2" data-theme-value="light"><i class="bi bi-sun-fill"></i> Claro</button></li>
+                        <li><button class="dropdown-item d-flex align-items-center gap-2" data-theme-value="dark"><i class="bi bi-moon-stars-fill"></i> Oscuro</button></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><button class="dropdown-item d-flex align-items-center gap-2" data-theme-value="auto"><i class="bi bi-circle-half"></i> Automatico</button></li>
                     </ul>
                 </div>
-
-
             </div>
         </div>
     </nav>
-</header>
 
-<div class="main container-fluid">
-    <div class="container text-center">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+    <main class="container py-4">
+        <h1 class="page-title">Cremas</h1>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+
+            <!-- Lavanda -->
             <div class="col">
-                <a data-bs-toggle="modal" data-bs-target="#Crema1Modal" type="button" class="modalBase">
-                    <div class="card h-100">
-                        <img src="media/image/Cremas/Crema_Lavanda_Córdoba.png" class="card-img-top" alt="...">
+                <a class="product-card" data-bs-toggle="modal" data-bs-target="#modalCremaLavanda" role="button" tabindex="0">
+                    <div class="card shadow-sm">
+                        <img src="image/Cremas/Crema_Lavanda_Cordoba.png" class="card-img-top" alt="Crema de Lavanda">
                         <div class="card-body">
-                            <h5 class="card-title">Lavanda</h5>
-                            <p class="card-text">
-                                <!-- texto -->
-                            </p>
+                            <p class="card-title">Lavanda</p>
+                            <p class="card-text">Crema con aceite esencial de lavanda. Humecta y reconforta.</p>
                         </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col">
-                <a data-bs-toggle="modal" data-bs-target="#Crema2Modal" type="button" class="modalBase">
-                    <div class="card h-100">
-                        <img src="media/image/Cremas/Crema_Contracturas.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Dolores Musculares y Contracturas</h5>
-                            <p class="card-text">
-                                <!-- texto -->
-                            </p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col">
-                <a data-bs-toggle="modal" data-bs-target="#Crema3Modal" type="button" class="modalBase">
-                    <div class="card h-100">
-                        <img src="media/image/Cremas/Crema_Dolor_Crónico.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Dolores Crónicos</h5>
-                            <p class="card-text">
-                                <!-- texto -->
-                            </p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col">
-                <a data-bs-toggle="modal" data-bs-target="#Crema4Modal" type="button" class="modalBase">
-                    <div class="card h-100">
-                        <img src="media/image/Cremas/Crema_Inmunológico.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Inmunológico</h5>
-                            <p class="card-text">
-                                <!-- texto -->
-                            </p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col">
-                <a data-bs-toggle="modal" data-bs-target="#Crema5Modal" type="button" class="modalBase">
-                    <div class="card h-100">
-                        <img src="media/image/Cremas/Crema_Piernas.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Loción de Piernas</h5>
-                            <p class="card-text">
-                                <!-- texto -->
-                            </p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col">
-                <a data-bs-toggle="modal" data-bs-target="#Crema6Modal" type="button" class="modalBase">
-                    <div class="card h-100">
-                        <img src="media/image/Cremas/Crema_Manos.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Crema de Manos</h5>
-                            <p class="card-text">
-                               <!-- texto -->
-                            </p>
+                        <div class="card-footer d-flex align-items-center justify-content-between">
+                            <span class="badge bg-primary">60ml</span>
+                            <small class="fw-semibold card-cta">Mas info <i class="bi bi-arrow-right"></i></small>
                         </div>
                     </div>
                 </a>
             </div>
 
+            <!-- Contracturas -->
+            <div class="col">
+                <a class="product-card" data-bs-toggle="modal" data-bs-target="#modalContracturas" role="button" tabindex="0">
+                    <div class="card shadow-sm">
+                        <img src="image/Cremas/Crema_Contracturas.jpg" class="card-img-top" alt="Dolores Musculares y Contracturas">
+                        <div class="card-body">
+                            <p class="card-title">Dolores Musculares y Contracturas</p>
+                            <p class="card-text">Alivia tensiones musculares y contracturas.</p>
+                        </div>
+                        <div class="card-footer d-flex align-items-center justify-content-between">
+                            <span class="badge bg-primary">60ml</span>
+                            <small class="fw-semibold card-cta">Mas info <i class="bi bi-arrow-right"></i></small>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Dolores Cronicos -->
+            <div class="col">
+                <a class="product-card" data-bs-toggle="modal" data-bs-target="#modalDoloresCronicos" role="button" tabindex="0">
+                    <div class="card shadow-sm">
+                        <img src="image/Cremas/Crema_Dolor_Cronico.jpg" class="card-img-top" alt="Dolores Cronicos">
+                        <div class="card-body">
+                            <p class="card-title">Dolores Cronicos</p>
+                            <p class="card-text">Ideal para casos de artritis y artrosis. Desinflama.</p>
+                        </div>
+                        <div class="card-footer d-flex align-items-center justify-content-between">
+                            <span class="badge bg-primary">60ml</span>
+                            <small class="fw-semibold card-cta">Mas info <i class="bi bi-arrow-right"></i></small>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Inmunologico -->
+            <div class="col">
+                <a class="product-card" data-bs-toggle="modal" data-bs-target="#modalInmunologico" role="button" tabindex="0">
+                    <div class="card shadow-sm">
+                        <img src="image/Cremas/Crema_Inmunologico.png" class="card-img-top" alt="Inmunologico">
+                        <div class="card-body">
+                            <p class="card-title">Inmunologico</p>
+                            <p class="card-text">Componentes pensados para activar tus defensas.</p>
+                        </div>
+                        <div class="card-footer d-flex align-items-center justify-content-between">
+                            <span class="badge bg-primary">60ml</span>
+                            <small class="fw-semibold card-cta">Mas info <i class="bi bi-arrow-right"></i></small>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Piernas -->
+            <div class="col">
+                <a class="product-card" data-bs-toggle="modal" data-bs-target="#modalPiernas" role="button" tabindex="0">
+                    <div class="card shadow-sm">
+                        <img src="image/Cremas/Crema_Piernas.png" class="card-img-top" alt="Locion de Piernas">
+                        <div class="card-body">
+                            <p class="card-title">Locion de Piernas</p>
+                            <p class="card-text">Facilita la circulacion. Suaviza calambres, desinflama.</p>
+                        </div>
+                        <div class="card-footer d-flex align-items-center justify-content-between">
+                            <span class="badge bg-primary">60ml</span>
+                            <small class="fw-semibold card-cta">Mas info <i class="bi bi-arrow-right"></i></small>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Manos -->
+            <div class="col">
+                <a class="product-card" data-bs-toggle="modal" data-bs-target="#modalManos" role="button" tabindex="0">
+                    <div class="card shadow-sm">
+                        <img src="image/Cremas/Crema_Manos.jpg" class="card-img-top" alt="Crema de Manos">
+                        <div class="card-body">
+                            <p class="card-title">Crema de Manos</p>
+                            <p class="card-text">Hidratante. Regenera piel danada o muy reseca.</p>
+                        </div>
+                        <div class="card-footer d-flex align-items-center justify-content-between">
+                            <span class="badge bg-primary">50ml</span>
+                            <small class="fw-semibold card-cta">Mas info <i class="bi bi-arrow-right"></i></small>
+                        </div>
+                    </div>
+                </a>
+            </div>
 
         </div>
-    </div>
-</div>
+    </main>
 
-<!-- Modals -->
-<!-- Modal 1 -->
-<div class="modal fade" id="Crema1Modal" tabindex="-1" aria-labelledby="Crema1ModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h1 class="modal-title fs-5" id="Crema1ModalLabel">Lavanda</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div class="row">
-                    <div class="col-8">
-                        Crema con aceite esencial de lavanda, extracto de glicerina, gel de aloe Vera .
-                        Reconforta a través de la humectacion las quemaduras de piel .
-                        Ayuda a repeler insectos. Relaja y afloja, o mediante el masaje.
-                        Alivia malestar ocasionado por bruxismo.
-                    </div>
-                    <div class="col-4 modal-img-section">
-                        <img src="media/image/Cremas/Crema_Lavanda_Córdoba.png" class="img-fluid" alt="...">
-                        <div class="modal-img-section">
-                            <span class="product-qty">Cantidad: 60ml</span>
+    <!-- ============================================================
+         PRODUCT MODALS
+         ============================================================ -->
+
+    <!-- Crema Lavanda -->
+    <div class="modal fade" id="modalCremaLavanda" tabindex="-1" aria-labelledby="modalCremaLavandaLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-product">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-semibold" id="modalCremaLavandaLabel">Lavanda</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-md-5 text-center">
+                            <img src="image/Cremas/Crema_Lavanda_Cordoba.png" class="product-image" alt="Crema de Lavanda">
+                        </div>
+                        <div class="col-md-7">
+                            <p class="product-description">Crema con aceite esencial de lavanda, extracto de glicerina, gel de aloe Vera. Reconforta a traves de la humectacion las quemaduras de piel. Ayuda a repeler insectos. Relaja y afloja, o mediante el masaje. Alivia malestar ocasionado por bruxismo.</p>
+                            <div class="d-flex gap-2">
+                                <span class="badge bg-primary">Cantidad: 60ml</span>
+                                <span class="badge badge-accent">Crema</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-            </div>
         </div>
     </div>
-</div>
 
-<!-- Modal 2 -->
-<div class="modal fade" id="Crema2Modal" tabindex="-1" aria-labelledby="Crema2ModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h1 class="modal-title fs-5" id="Crema2ModalLabel">Dolores Musculares y Contracturas</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div class="row">
-                    <div class="col-8">
-                        Crema con aceite esencial de enebro, eucalipto  y alcanfor .
-                        Extracto de Salvia y  Melisa. Las tensiones musculares  y contracturas,
-                        devolviendo flexibilidad y aliviando el dolor muscular.
-                        Ayuda a vigorizar la piel. Utilizada en casos de tendinitis.
-                    </div>
-                    <div class="col-4 modal-img-section">
-                        <img src="media/image/Cremas/Crema_Contracturas.jpg" class="img-fluid" alt="...">
-                        <div class="modal-img-section">
-                            <span class="product-qty">Cantidad: 60ml</span>
+    <!-- Contracturas -->
+    <div class="modal fade" id="modalContracturas" tabindex="-1" aria-labelledby="modalContracturasLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-product">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-semibold" id="modalContracturasLabel">Dolores Musculares y Contracturas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-md-5 text-center">
+                            <img src="image/Cremas/Crema_Contracturas.jpg" class="product-image" alt="Dolores Musculares y Contracturas">
+                        </div>
+                        <div class="col-md-7">
+                            <p class="product-description">Crema con aceite esencial de enebro, eucalipto y alcanfor. Extracto de Salvia y Melisa. Las tensiones musculares y contracturas, devolviendo flexibilidad y aliviando el dolor muscular. Ayuda a vigorizar la piel. Utilizada en casos de tendinitis.</p>
+                            <div class="d-flex gap-2">
+                                <span class="badge bg-primary">Cantidad: 60ml</span>
+                                <span class="badge badge-accent">Crema</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-            </div>
         </div>
     </div>
-</div>
 
-<!-- Modal 3 -->
-<div class="modal fade" id="Crema3Modal" tabindex="-1" aria-labelledby="Crema3ModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h1 class="modal-title fs-5" id="Crema3ModalLabel">Dolores Crónicos</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div class="row">
-                    <div class="col-8">
-                        Crema con base de árnica. Con aceite esencial de salvia y extractos de  Menta y cedro .
-                        Ideal para casos de artritis y artrosis. Desinflama. Alivia dolores articulares.
-                        Con propiedades astringentes como estimulante y tonificante.
-                    </div>
-                    <div class="col-4 modal-img-section">
-                        <img src="media/image/Cremas/Crema_Dolor_Crónico.jpg" class="img-fluid" alt="...">
-                        <div class="modal-img-section">
-                            <span class="product-qty">Cantidad: 60ml</span>
+    <!-- Dolores Cronicos -->
+    <div class="modal fade" id="modalDoloresCronicos" tabindex="-1" aria-labelledby="modalDoloresCronicosLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-product">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-semibold" id="modalDoloresCronicosLabel">Dolores Cronicos</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-md-5 text-center">
+                            <img src="image/Cremas/Crema_Dolor_Cronico.jpg" class="product-image" alt="Dolores Cronicos">
+                        </div>
+                        <div class="col-md-7">
+                            <p class="product-description">Crema con base de arnica. Con aceite esencial de salvia y extractos de Menta y cedro. Ideal para casos de artritis y artrosis. Desinflama. Alivia dolores articulares. Con propiedades astringentes como estimulante y tonificante.</p>
+                            <div class="d-flex gap-2">
+                                <span class="badge bg-primary">Cantidad: 60ml</span>
+                                <span class="badge badge-accent">Crema</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-            </div>
         </div>
     </div>
-</div>
 
-<!-- Modal 4 -->
-<div class="modal fade" id="Crema4Modal" tabindex="-1" aria-labelledby="Crema4ModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h1 class="modal-title fs-5" id="Crema4ModalLabel">Inmunológico</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div class="row">
-                    <div class="col-8">
-                        Crema con componentes pensado para activar tus defensas.
-                        Con base d aceite esencial de equinácea y tomillo; y extractos de tea tree,
-                        alcanfor ,entre otros. Equinacea refuerza y estimula la actividad del sistema inmunológico.
-                        Impulsa el rendimiento físico y mental. Pensada para personas con poca resistencia física,
-                        niños edad escolar, personas con alta demanda laboral o que estén recuperándose de una
-                        enfermedad (con el sistema inmunológico débil).
-                    </div>
-                    <div class="col-4 modal-img-section">
-                        <img src="media/image/Cremas/Crema_Inmunológico.png" class="img-fluid" alt="...">
-                        <div class="modal-img-section">
-                            <span class="product-qty">Cantidad: 60ml</span>
+    <!-- Inmunologico -->
+    <div class="modal fade" id="modalInmunologico" tabindex="-1" aria-labelledby="modalInmunologicoLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-product">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-semibold" id="modalInmunologicoLabel">Inmunologico</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-md-5 text-center">
+                            <img src="image/Cremas/Crema_Inmunologico.png" class="product-image" alt="Inmunologico">
+                        </div>
+                        <div class="col-md-7">
+                            <p class="product-description">Crema con componentes pensado para activar tus defensas. Con base d aceite esencial de equinacea y tomillo; y extractos de tea tree, alcanfor, entre otros. Equinacea refuerza y estimula la actividad del sistema inmunologico. Impulsa el rendimiento fisico y mental. Pensada para personas con poca resistencia fisica, ninos edad escolar, personas con alta demanda laboral o que esten recuperandose de una enfermedad (con el sistema inmunologico debil).</p>
+                            <div class="d-flex gap-2">
+                                <span class="badge bg-primary">Cantidad: 60ml</span>
+                                <span class="badge badge-accent">Crema</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-            </div>
         </div>
     </div>
-</div>
 
-<!-- Modal 5 -->
-<div class="modal fade" id="Crema5Modal" tabindex="-1" aria-labelledby="Crema5ModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h1 class="modal-title fs-5" id="Crema5ModalLabel">Loción de Piernas</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div class="row">
-                    <div class="col-8">
-                        Loción De Piernas con Romero , benjuí y tomillo que otorgan elasticidad en los vasos
-                        sanguíneos facilitando la circulación. También contiene aceite de geranio que
-                        estimula el sistema linfático. Suaviza calambres , desinflama las piernas.
-                        Relaja piernas cansadas. Se recomienda conservar en la heladera.
-                        Aplicar de abajo hacia arriba
-                    </div>
-                    <div class="col-4 modal-img-section">
-                        <img src="media/image/Cremas/Crema_Piernas.png" class="img-fluid" alt="...">
-                        <div class="modal-img-section">
-                            <span class="product-qty">Cantidad: 60ml</span>
+    <!-- Piernas -->
+    <div class="modal fade" id="modalPiernas" tabindex="-1" aria-labelledby="modalPiernasLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-product">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-semibold" id="modalPiernasLabel">Locion de Piernas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-md-5 text-center">
+                            <img src="image/Cremas/Crema_Piernas.png" class="product-image" alt="Locion de Piernas">
+                        </div>
+                        <div class="col-md-7">
+                            <p class="product-description">Locion De Piernas con Romero, benjui y tomillo que otorgan elasticidad en los vasos sanguineos facilitando la circulacion. Tambien contiene aceite de geranio que estimula el sistema linfatico. Suaviza calambres, desinflama las piernas. Relaja piernas cansadas. Se recomienda conservar en la heladera. Aplicar de abajo hacia arriba</p>
+                            <div class="d-flex gap-2">
+                                <span class="badge bg-primary">Cantidad: 60ml</span>
+                                <span class="badge badge-accent">Crema</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-            </div>
         </div>
     </div>
-</div>
 
-<!-- Modal 6 -->
-<div class="modal fade" id="Crema6Modal" tabindex="-1" aria-labelledby="Crema6ModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h1 class="modal-title fs-5" id="Crema6ModalLabel">Crema de Manos</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div class="row">
-                    <div class="col-8">
-                        Hidratante. Regenera   piel dañada o muy reseca .Restaura la elasticidad. Protege tus manos 
-                        gracias a la Manteca de Karite. Con extracto de Caléndula y Sandalo.  Fortalecida  con vitamina  A, E y  F.
-                    </div>
-                    <div class="col-4 modal-img-section">
-                        <img src="media/image/Cremas/Crema_Manos.jpg" class="img-fluid" alt="...">
-                        <div class="modal-img-section">
-                            <span class="product-qty">Cantidad: 50ml</span>
+    <!-- Manos -->
+    <div class="modal fade" id="modalManos" tabindex="-1" aria-labelledby="modalManosLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-product">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-semibold" id="modalManosLabel">Crema de Manos</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-md-5 text-center">
+                            <img src="image/Cremas/Crema_Manos.jpg" class="product-image" alt="Crema de Manos">
+                        </div>
+                        <div class="col-md-7">
+                            <p class="product-description">Hidratante. Regenera piel danada o muy reseca. Restaura la elasticidad. Protege tus manos gracias a la Manteca de Karite. Con extracto de Calendula y Sandalo. Fortalecida con vitamina A, E y F.</p>
+                            <div class="d-flex gap-2">
+                                <span class="badge bg-primary">Cantidad: 50ml</span>
+                                <span class="badge badge-accent">Crema</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-            </div>
         </div>
     </div>
-</div>
 
-
-
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
