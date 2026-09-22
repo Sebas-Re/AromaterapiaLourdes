@@ -1,2 +1,2 @@
-# Cat·logo Aromaterapia Lourdes
-Cat·logo para Aromaterapia Lourdes
+# Cat√°logo Aromaterapia Lourdes
+Cat√°logo para Aromaterapia Lourdes, creado a partir del template de https://github.com/Sebas-Re/CoffeeAddictsWebsite/
