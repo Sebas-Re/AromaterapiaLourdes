@@ -3,4 +3,6 @@ Catálogo para Aromaterapia Lourdes, creado a partir del template de https://git
 
 <img width="1748" height="1249" alt="image" src="https://github.com/user-attachments/assets/adbe3068-cf1f-48b3-8279-003eef0826bc" />
 
+<img width="1090" height="474" alt="image" src="https://github.com/user-attachments/assets/28f0f301-c41c-434b-a153-158d01d13591" />
+
 <img width="1719" height="1047" alt="image" src="https://github.com/user-attachments/assets/aaf56dc8-064f-4580-8459-50ea5b367691" />
